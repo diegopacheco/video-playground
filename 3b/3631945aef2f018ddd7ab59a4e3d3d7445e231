@@ -1,0 +1,155 @@
+03-origin-cdn-edge/.gitignore
+  s_b21fc2ba85cee9::t_f204d039426918 5-7
+  s_b21fc2ba85cee9::t_218c8a58fd08e2 1-4
+03-origin-cdn-edge/backend/src/bin/edge.rs
+  s_b21fc2ba85cee9::t_d6c73bd5c061d8 1-17
+03-origin-cdn-edge/k6/results/cache-40mb/origin-stats.json
+  s_b21fc2ba85cee9::t_b7c4d4f16083eb 1
+03-origin-cdn-edge/backend/src/coalescer.rs
+  s_b21fc2ba85cee9::t_d1c1e386721177 1-42,48-52
+  s_b21fc2ba85cee9::t_66b1c5f59be856 43-47
+03-origin-cdn-edge/backend/src/config.rs
+  s_b21fc2ba85cee9::t_632ffd47ceef29 1-22
+03-origin-cdn-edge/backend/src/metrics.rs
+  s_b21fc2ba85cee9::t_c85e31f8b26011 1-97
+03-origin-cdn-edge/k6/results/cache-8mb/summary.txt
+  s_b21fc2ba85cee9::t_88588ac6eb3046 1-6
+03-origin-cdn-edge/frontend/src/App.tsx
+  s_b21fc2ba85cee9::t_d48be7f0f580ee 1-32
+03-origin-cdn-edge/scripts/setup.sh
+  s_b21fc2ba85cee9::t_ad7f49565c9b91 1-17
+03-origin-cdn-edge/k6/results/cache-40mb/summary.txt
+  s_b21fc2ba85cee9::t_b7c4d4f16083eb 1-6
+03-origin-cdn-edge/frontend/src/components/LiveMetricsView.tsx
+  s_b21fc2ba85cee9::t_59e99e9fa90aad 1-46
+03-origin-cdn-edge/backend/src/origin_server.rs
+  s_b21fc2ba85cee9::t_fcff167d9182ec 1-96,108-117,119-121
+  s_b21fc2ba85cee9::t_2f3449cf6436bb 118
+  s_b21fc2ba85cee9::t_ff72b9bb85bcdc 97-107
+03-origin-cdn-edge/frontend/src/components/ProbeView.tsx
+  s_b21fc2ba85cee9::t_1007b37a143ee9 1,3-7,9-13,24-27,29-38,40-60,62-69,71-74
+  s_b21fc2ba85cee9::t_45e77ccaf1f002 2
+  s_b21fc2ba85cee9::t_b72a95ee75f766 70
+  s_b21fc2ba85cee9::t_4eb5a1cd42b5a9 28
+  s_b21fc2ba85cee9::t_2b9cfb505107f0 8
+  s_b21fc2ba85cee9::t_4752b7181764f0 39
+  s_b21fc2ba85cee9::t_428b696405dde0 61
+  s_b21fc2ba85cee9::t_ea92505aed8bf9 14-23
+03-origin-cdn-edge/scripts/stop-all.sh
+  s_b21fc2ba85cee9::t_514d83dce1549f 1-18
+03-origin-cdn-edge/backend/src/edge.rs
+  s_b21fc2ba85cee9::t_3e6e745b9b3414 1-366
+03-origin-cdn-edge/scripts/status.sh
+  s_b21fc2ba85cee9::t_589e34dfc91982 18
+  s_b21fc2ba85cee9::t_46ea613eeadef9 1-17
+03-origin-cdn-edge/frontend/src/lib/format.ts
+  s_b21fc2ba85cee9::t_c2975619334ce5 1-19
+03-origin-cdn-edge/k6/results/cache-8mb/edge-metrics.json
+  s_b21fc2ba85cee9::t_88588ac6eb3046 1
+03-origin-cdn-edge/frontend/src/env.d.ts
+  s_b21fc2ba85cee9::t_84ab23b4887e6a 1
+03-origin-cdn-edge/scripts/test-all.sh
+  s_b21fc2ba85cee9::t_d4704f74da2059 1-12
+03-origin-cdn-edge/frontend/src/components/HitRatioGauge.tsx
+  s_b21fc2ba85cee9::t_53dccaac0bfa46 1-32
+03-origin-cdn-edge/k6/run.sh
+  s_b21fc2ba85cee9::t_8bffd5247a1658 1-17
+03-origin-cdn-edge/frontend/vite.config.ts
+  s_b21fc2ba85cee9::t_7c4362e4b0835e 1-17
+03-origin-cdn-edge/backend/src/origin_client.rs
+  s_b21fc2ba85cee9::t_3fa9eaac3a3d11 1-62
+03-origin-cdn-edge/backend/src/lib.rs
+  s_b21fc2ba85cee9::t_6bfb3512ad0d82 1-11
+03-origin-cdn-edge/frontend/src/lib/history.ts
+  s_b21fc2ba85cee9::t_052a5006ec03fe 1-26
+03-origin-cdn-edge/frontend/src/styles.css
+  s_b21fc2ba85cee9::t_776ad73ae31a09 1-322
+03-origin-cdn-edge/frontend/package.json
+  s_b21fc2ba85cee9::t_792be0c15c873d 1-22
+03-origin-cdn-edge/backend/Cargo.toml
+  s_b21fc2ba85cee9::t_32d2071d5f24fa 1-29
+03-origin-cdn-edge/scripts/ui.sh
+  s_b21fc2ba85cee9::t_46ea613eeadef9 1-12
+03-origin-cdn-edge/frontend/tsconfig.json
+  s_b21fc2ba85cee9::t_3b1ccdb2a1edb1 1-20
+03-origin-cdn-edge/frontend/src/lib/history.test.ts
+  s_b21fc2ba85cee9::t_cc0394f0229224 1-33,37-40
+  s_b21fc2ba85cee9::t_2added483c7d6c 34-36
+03-origin-cdn-edge/backend/src/cache.rs
+  s_b21fc2ba85cee9::t_569d8e8c9c7449 1-179
+03-origin-cdn-edge/frontend/src/hooks/useLiveMetrics.ts
+  s_b21fc2ba85cee9::t_ce28a5fb4bc968 1-42
+03-origin-cdn-edge/backend/src/error.rs
+  s_b21fc2ba85cee9::t_5c1574e0851679 1-11
+03-origin-cdn-edge/frontend/src/hooks/usePolling.ts
+  s_b21fc2ba85cee9::t_f9b92af115c5b5 1-34
+03-origin-cdn-edge/README.md
+  s_b21fc2ba85cee9::t_a793f5173b81ea 1-179
+03-origin-cdn-edge/frontend/index.html
+  s_b21fc2ba85cee9::t_eda4468f067be9 1-12
+03-origin-cdn-edge/scripts/common.sh
+  s_b21fc2ba85cee9::t_46ea613eeadef9 1-122
+03-origin-cdn-edge/backend/src/edge_server.rs
+  s_b21fc2ba85cee9::t_d3ab0b2c93b692 48-93
+  s_b21fc2ba85cee9::t_3f7296a79d84d1 9,13,15
+  s_b21fc2ba85cee9::t_0f15daeda5777f 1-8,10-12,14,16-47,94-105,107-111
+  s_b21fc2ba85cee9::t_48e260cbb172a3 106
+03-origin-cdn-edge/frontend/src/main.tsx
+  s_b21fc2ba85cee9::t_cbd2202e72ba58 1-13
+03-origin-cdn-edge/frontend/src/components/Sparkline.tsx
+  s_b21fc2ba85cee9::t_2981db88d38a5c 1-28
+03-origin-cdn-edge/frontend/src/api/client.ts
+  s_b21fc2ba85cee9::t_77a74fee74ae19 2-25,29-30,34
+  s_b21fc2ba85cee9::t_606ca14ca0404b 1
+  s_b21fc2ba85cee9::t_be417f4a6a92dd 26-28,31-33
+03-origin-cdn-edge/k6/results/cache-8mb/origin-stats.json
+  s_b21fc2ba85cee9::t_88588ac6eb3046 1
+03-origin-cdn-edge/k6/results/cache-40mb/edge-metrics.json
+  s_b21fc2ba85cee9::t_b7c4d4f16083eb 1
+03-origin-cdn-edge/frontend/src/types/metrics.ts
+  s_b21fc2ba85cee9::t_0326999d8b8d4f 1-44
+03-origin-cdn-edge/backend/src/entry.rs
+  s_b21fc2ba85cee9::t_e87f75fe7fa941 1-68
+03-origin-cdn-edge/frontend/src/components/CacheUsage.tsx
+  s_b21fc2ba85cee9::t_7128fed140f8e4 1-28
+03-origin-cdn-edge/k6/zipf-load.js
+  s_b21fc2ba85cee9::t_e32d4887a85177 1-95
+03-origin-cdn-edge/backend/tests/http_edge.rs
+  s_b21fc2ba85cee9::t_44bc8e6512acaf 88-112
+  s_b21fc2ba85cee9::t_b464e28dcf83fd 1-87,113-119
+03-origin-cdn-edge/frontend/src/components/MetricCard.tsx
+  s_b21fc2ba85cee9::t_3d26c118dd3bb3 1-16
+03-origin-cdn-edge/docs/architecture.svg
+  s_b21fc2ba85cee9::t_b50b5c9e020c89 1-66,69-70
+  s_b21fc2ba85cee9::t_e0170447ccb70b 67-68
+03-origin-cdn-edge/frontend/src/lib/format.test.ts
+  s_b21fc2ba85cee9::t_ce058dfcb8fe5f 1-21
+03-origin-cdn-edge/scripts/start-all.sh
+  s_b21fc2ba85cee9::t_aa96327f32099e 1-37
+03-origin-cdn-edge/scripts/ports.env
+  s_b21fc2ba85cee9::t_46ea613eeadef9 1-3
+03-origin-cdn-edge/backend/src/bin/origin.rs
+  s_b21fc2ba85cee9::t_4f90d50905ffb4 1-17
+03-origin-cdn-edge/backend/src/cache_control.rs
+  s_b21fc2ba85cee9::t_abc0d65d7971b0 1-87
+03-origin-cdn-edge/backend/Cargo.lock
+  s_b21fc2ba85cee9::t_0bf57c385e05fb 1-983
+03-origin-cdn-edge/frontend/bun.lock
+  s_b21fc2ba85cee9::t_5079f62b45466d 1-154
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "3b3631945aef2f018ddd7ab59a4e3d3d7445e231",
+  "prompts": {},
+  "sessions": {
+    "s_b21fc2ba85cee9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36239a68-0214-46fa-90ab-e0d06be57d68",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "diegopacheco <diego.pacheco.it@gmail.com>"
+    }
+  }
+}
