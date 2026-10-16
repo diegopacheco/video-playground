@@ -1,0 +1,137 @@
+01-hls-dash-packager/backend/src/packager.rs
+  s_b21fc2ba85cee9::t_714d131ed42b4f 1-67
+01-hls-dash-packager/frontend/src/components/LadderTab.tsx
+  s_b21fc2ba85cee9::t_e16e49945252ff 1-89
+01-hls-dash-packager/frontend/vite.config.ts
+  s_b21fc2ba85cee9::t_44dae11c2b5785 1-5,7-9
+  s_b21fc2ba85cee9::t_5bc21001652b4c 6
+01-hls-dash-packager/backend/src/command.rs
+  s_b21fc2ba85cee9::t_82bcdd38e3c617 1-13
+01-hls-dash-packager/backend/src/ladder.rs
+  s_b21fc2ba85cee9::t_61535c9c4f3bf1 75
+  s_b21fc2ba85cee9::t_f5228556f4c721 1-74,76-153
+01-hls-dash-packager/.gitignore
+  s_b21fc2ba85cee9::t_2ee09f0f2ea199 1-5
+01-hls-dash-packager/frontend/tsconfig.json
+  s_b21fc2ba85cee9::t_fc5a1ab15d2793 1-18
+01-hls-dash-packager/frontend/index.html
+  s_b21fc2ba85cee9::t_2597b9f7204bdb 6
+  s_b21fc2ba85cee9::t_32b07f823df28b 1-5,7-13
+01-hls-dash-packager/README.md
+  s_b21fc2ba85cee9::t_d2bfb16fbdb4c0 82
+  s_b21fc2ba85cee9::t_028ec6912f1fad 66
+  s_b21fc2ba85cee9::t_576adb4c27f0ae 1-65,67-81,83-145
+01-hls-dash-packager/backend/src/main.rs
+  s_b21fc2ba85cee9::t_41335246508bb0 1-60
+01-hls-dash-packager/frontend/src/components/PlayerPanel.tsx
+  s_b21fc2ba85cee9::t_2475910b5f6cb8 1-2,5-8,10-13,16-29,32-51
+  s_b21fc2ba85cee9::t_9e9b79abaa37cd 3-4,9,14-15
+  s_b21fc2ba85cee9::t_107b9529cad808 30-31
+01-hls-dash-packager/frontend/src/components/DashTab.tsx
+  s_b21fc2ba85cee9::t_39b19c12bd93c9 5,8
+  s_b21fc2ba85cee9::t_22b6334d2e7932 1-4,6-7,9
+01-hls-dash-packager/scripts/ui.sh
+  s_b21fc2ba85cee9::t_5bebc3e52a493e 1-12
+01-hls-dash-packager/frontend/src/types/manifest.ts
+  s_b21fc2ba85cee9::t_14d7b5eca3f49e 1-57
+01-hls-dash-packager/backend/Cargo.toml
+  s_b21fc2ba85cee9::t_1e06fb6298435e 13-15
+  s_b21fc2ba85cee9::t_7b05c4a8077e33 1-12
+01-hls-dash-packager/scripts/common.sh
+  s_b21fc2ba85cee9::t_5bebc3e52a493e 1-28,30-32,36-122
+  s_b21fc2ba85cee9::t_7a0b5cd422f8eb 29,33-35
+01-hls-dash-packager/backend/src/dash.rs
+  s_b21fc2ba85cee9::t_cc2d8903d75690 1-77
+01-hls-dash-packager/backend/src/server.rs
+  s_b21fc2ba85cee9::t_d80534a84ce1e5 136-137,139-140
+  s_b21fc2ba85cee9::t_6676f28faae055 1-135,138,141-203
+01-hls-dash-packager/frontend/src/api/client.ts
+  s_b21fc2ba85cee9::t_6a0466a82b29a4 1-15
+01-hls-dash-packager/frontend/src/App.tsx
+  s_b21fc2ba85cee9::t_39b19c12bd93c9 52-53
+  s_b21fc2ba85cee9::t_201789142f75cb 28-30
+  s_b21fc2ba85cee9::t_a1f49a914c98bd 1-27,31-51,54-57
+01-hls-dash-packager/backend/src/error.rs
+  s_b21fc2ba85cee9::t_cd8455556b8b13 1-19
+01-hls-dash-packager/backend/src/alignment.rs
+  s_b21fc2ba85cee9::t_10089a7a3c8fb7 1-123
+01-hls-dash-packager/backend/tests/keyframe_alignment.rs
+  s_b21fc2ba85cee9::t_f992e6f8ec1964 1-146
+01-hls-dash-packager/frontend/src/hooks/useDashPlayer.ts
+  s_b21fc2ba85cee9::t_5ca8e1dc53cace 48
+  s_b21fc2ba85cee9::t_eace61efc875a6 1-47,49
+01-hls-dash-packager/frontend/src/components/SegmentChart.tsx
+  s_b21fc2ba85cee9::t_21a3f890791a12 1-26
+01-hls-dash-packager/backend/src/probe.rs
+  s_b21fc2ba85cee9::t_7a66dc4cb61f74 1-54
+01-hls-dash-packager/backend/src/pipeline.rs
+  s_b21fc2ba85cee9::t_659e395d453676 1-86
+01-hls-dash-packager/frontend/src/components/KeyframeTimeline.tsx
+  s_b21fc2ba85cee9::t_ffa8d43f7caece 1-38
+01-hls-dash-packager/scripts/ports.env
+  s_b21fc2ba85cee9::t_958a75eeba6feb 1-2
+01-hls-dash-packager/scripts/stop-all.sh
+  s_b21fc2ba85cee9::t_e4acb1264a6741 1-17
+01-hls-dash-packager/frontend/src/lib/format.test.ts
+  s_b21fc2ba85cee9::t_11ff30cb10465f 1,3-57,68-72
+  s_b21fc2ba85cee9::t_022a39427043d1 2
+  s_b21fc2ba85cee9::t_2d83f857b7f866 58-67
+01-hls-dash-packager/scripts/test-all.sh
+  s_b21fc2ba85cee9::t_f63a24e71a4a30 1-15
+01-hls-dash-packager/frontend/src/styles.css
+  s_b21fc2ba85cee9::t_3a95f4f7b62ece 1-274
+01-hls-dash-packager/backend/src/mime.rs
+  s_b21fc2ba85cee9::t_545657a3453229 1-44
+01-hls-dash-packager/frontend/src/main.tsx
+  s_b21fc2ba85cee9::t_680090f25b40f6 1-13
+01-hls-dash-packager/frontend/package.json
+  s_b21fc2ba85cee9::t_433c4f379521c6 1-26
+01-hls-dash-packager/backend/src/lib.rs
+  s_b21fc2ba85cee9::t_3b8176984f57ef 1-28
+01-hls-dash-packager/frontend/src/hooks/useBufferAhead.ts
+  s_b21fc2ba85cee9::t_7dd8dc3be5a931 1-16
+01-hls-dash-packager/backend/src/manifest.rs
+  s_b21fc2ba85cee9::t_d54a44312afc49 1-140
+01-hls-dash-packager/docs/architecture.svg
+  s_b21fc2ba85cee9::t_c4f8594787694c 11
+  s_b21fc2ba85cee9::t_e4c224fde37939 1-10,12-72
+01-hls-dash-packager/scripts/start-all.sh
+  s_b21fc2ba85cee9::t_d1ac04d1ae215b 1-28
+01-hls-dash-packager/frontend/src/components/HlsTab.tsx
+  s_b21fc2ba85cee9::t_39b19c12bd93c9 5,8
+  s_b21fc2ba85cee9::t_906181d1f60be4 1-4,6-7,9
+01-hls-dash-packager/scripts/setup.sh
+  s_b21fc2ba85cee9::t_6569bc00597e90 1-34
+01-hls-dash-packager/backend/src/encoder.rs
+  s_b21fc2ba85cee9::t_9769e5cdbb88d2 1-103
+01-hls-dash-packager/frontend/src/hooks/useHlsPlayer.ts
+  s_b21fc2ba85cee9::t_575bb3ee2ecec2 1-44,46
+  s_b21fc2ba85cee9::t_c64efde87033f6 45
+01-hls-dash-packager/frontend/src/lib/format.ts
+  s_b21fc2ba85cee9::t_fc2f69802a1627 1-30,36-38
+  s_b21fc2ba85cee9::t_a0fc67158461b7 31-35
+01-hls-dash-packager/backend/src/hls.rs
+  s_b21fc2ba85cee9::t_af7cd1e6c51bbf 1-84
+01-hls-dash-packager/scripts/status.sh
+  s_b21fc2ba85cee9::t_5bebc3e52a493e 1-14
+01-hls-dash-packager/backend/Cargo.lock
+  s_b21fc2ba85cee9::t_da4db1c4bf92bc 1-518
+01-hls-dash-packager/frontend/bun.lock
+  s_b21fc2ba85cee9::t_fa6fb4359bbc0d 1-214
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "d6eb06fde151499452416c4bf83eaf7dec1a0b57",
+  "prompts": {},
+  "sessions": {
+    "s_b21fc2ba85cee9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36239a68-0214-46fa-90ab-e0d06be57d68",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "diegopacheco <diego.pacheco.it@gmail.com>"
+    }
+  }
+}
