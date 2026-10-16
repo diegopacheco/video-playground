@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="1000" height="620">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&amp;display=swap');
+      text { font-family: 'Caveat', 'Comic Sans MS', cursive; fill: #1d2433; }
+      .title { font-size: 26px; font-weight: 700; }
+      .label { font-size: 21px; font-weight: 700; }
+      .note { font-size: 17px; }
+      .box { stroke: #1d2433; stroke-width: 2.2; filter: url(#wobble); }
+      .arrow { stroke: #1d2433; stroke-width: 2.2; fill: none; marker-end: url(#head); filter: url(#wobble); }
+    </style>
+    <filter id="wobble" filterUnits="userSpaceOnUse" x="0" y="0" width="1000" height="620">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise" seed="7"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3"/>
+    </filter>
+    <marker id="head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1d2433"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="620" fill="#ffffff"/>
+  <text x="500" y="38" text-anchor="middle" class="title">Simulcast Release Scheduler</text>
+
+  <rect x="30" y="80" width="200" height="90" rx="14" fill="#d0ebff" class="box"/>
+  <text x="130" y="115" text-anchor="middle" class="label">React UI</text>
+  <text x="130" y="142" text-anchor="middle" class="note">countdowns, board, clock</text>
+
+  <rect x="30" y="210" width="200" height="90" rx="14" fill="#e5dbff" class="box"/>
+  <text x="130" y="245" text-anchor="middle" class="label">k6 herd</text>
+  <text x="130" y="272" text-anchor="middle" class="note">300 VUs at unlock</text>
+
+  <rect x="300" y="130" width="200" height="110" rx="14" fill="#fff3bf" class="box"/>
+  <text x="400" y="168" text-anchor="middle" class="label">axum API</text>
+  <text x="400" y="195" text-anchor="middle" class="note">X-Country / IP</text>
+  <text x="400" y="218" text-anchor="middle" class="note">Retry-After + jitter</text>
+
+  <rect x="570" y="70" width="190" height="90" rx="14" fill="#d3f9d8" class="box"/>
+  <text x="665" y="105" text-anchor="middle" class="label">GeoResolver</text>
+  <text x="665" y="132" text-anchor="middle" class="note">header, IP range table</text>
+
+  <rect x="570" y="200" width="190" height="90" rx="14" fill="#ffe3e3" class="box"/>
+  <text x="665" y="235" text-anchor="middle" class="label">Response cache</text>
+  <text x="665" y="262" text-anchor="middle" class="note">jittered TTL, bounded</text>
+
+  <rect x="570" y="330" width="190" height="90" rx="14" fill="#ffd8a8" class="box"/>
+  <text x="665" y="365" text-anchor="middle" class="label">Token bucket</text>
+  <text x="665" y="392" text-anchor="middle" class="note">admission on misses</text>
+
+  <rect x="800" y="200" width="170" height="90" rx="14" fill="#c3fae8" class="box"/>
+  <text x="885" y="235" text-anchor="middle" class="label">Entitlement</text>
+  <text x="885" y="262" text-anchor="middle" class="note">open / locked / blocked</text>
+
+  <rect x="800" y="360" width="170" height="90" rx="14" fill="#f3d9fa" class="box"/>
+  <text x="885" y="395" text-anchor="middle" class="label">Schedule store</text>
+  <text x="885" y="422" text-anchor="middle" class="note">precomputed plans</text>
+
+  <rect x="300" y="330" width="200" height="90" rx="14" fill="#e9ecef" class="box"/>
+  <text x="400" y="365" text-anchor="middle" class="label">Clock trait</text>
+  <text x="400" y="392" text-anchor="middle" class="note">system + offset / manual</text>
+
+  <rect x="300" y="480" width="200" height="90" rx="14" fill="#d0ebff" class="box"/>
+  <text x="400" y="515" text-anchor="middle" class="label">Unlock warmer</text>
+  <text x="400" y="542" text-anchor="middle" class="note">every 200 ms, 2 s ahead</text>
+
+  <rect x="800" y="490" width="170" height="80" rx="14" fill="#fff9db" class="box"/>
+  <text x="885" y="522" text-anchor="middle" class="label">chrono-tz</text>
+  <text x="885" y="548" text-anchor="middle" class="note">local release time</text>
+
+  <path d="M230 125 L298 165" class="arrow"/>
+  <path d="M230 255 L298 215" class="arrow"/>
+  <path d="M500 160 L568 120" class="arrow"/>
+  <path d="M500 195 L568 240" class="arrow"/>
+  <path d="M665 290 L665 328" class="arrow"/>
+  <path d="M760 375 L840 292" class="arrow"/>
+  <path d="M885 290 L885 358" class="arrow"/>
+  <path d="M885 450 L885 488" class="arrow"/>
+  <path d="M400 240 L400 328" class="arrow"/>
+  <path d="M500 525 L540 525 L540 262 L568 250" class="arrow"/>
+  <text x="560" y="470" class="note">fills unlock entries early</text>
+</svg>
