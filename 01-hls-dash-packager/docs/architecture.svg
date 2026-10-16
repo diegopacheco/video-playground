@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 520" width="1040" height="520">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&amp;display=swap');
+      .t { font-family: 'Caveat', 'Comic Sans MS', cursive; fill: #1e1e1e; }
+      .h { font-size: 24px; font-weight: 700; }
+      .s { font-size: 18px; }
+      .box { stroke: #1e1e1e; stroke-width: 2.2; filter: url(#wobble); }
+      .arrow { stroke: #1e1e1e; stroke-width: 2.2; fill: none; filter: url(#wobble); marker-end: url(#head); }
+    </style>
+    <filter id="wobble" filterUnits="userSpaceOnUse" x="0" y="0" width="1040" height="520">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="7" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3"/>
+    </filter>
+    <marker id="head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M0,0 L10,5 L0,10" fill="none" stroke="#1e1e1e" stroke-width="1.6"/>
+    </marker>
+  </defs>
+  <rect width="1040" height="520" fill="#ffffff"/>
+
+  <text class="t h" x="20" y="34">Packaging pipeline (Rust, runs in setup)</text>
+
+  <rect class="box" x="20" y="60" width="180" height="110" rx="14" fill="#fff3bf"/>
+  <text class="t h" x="40" y="95">source.mp4</text>
+  <text class="t s" x="40" y="122">ffmpeg lavfi testsrc2</text>
+  <text class="t s" x="40" y="146">1080p24, 30s</text>
+
+  <rect class="box" x="250" y="60" width="210" height="110" rx="14" fill="#d0ebff"/>
+  <text class="t h" x="268" y="95">Encoder trait</text>
+  <text class="t s" x="268" y="122">FfmpegEncoder x264</text>
+  <text class="t s" x="268" y="146">GOP 48, scenecut off</text>
+
+  <rect class="box" x="510" y="60" width="210" height="110" rx="14" fill="#e5dbff"/>
+  <text class="t h" x="528" y="95">KeyframeProbe</text>
+  <text class="t s" x="528" y="122">ffprobe IDR times</text>
+  <text class="t s" x="528" y="146">alignment check</text>
+
+  <rect class="box" x="770" y="60" width="250" height="110" rx="14" fill="#d3f9d8"/>
+  <text class="t h" x="788" y="95">Packager trait</text>
+  <text class="t s" x="788" y="122">CMAF fMP4: init.mp4</text>
+  <text class="t s" x="788" y="146">+ seg_NNNNN.m4s (2s)</text>
+
+  <path class="arrow" d="M200,115 L246,115"/>
+  <path class="arrow" d="M460,115 L506,115"/>
+  <path class="arrow" d="M720,115 L766,115"/>
+
+  <rect class="box" x="640" y="230" width="380" height="110" rx="14" fill="#ffe8cc"/>
+  <text class="t h" x="658" y="265">Manifest writers</text>
+  <text class="t s" x="658" y="292">master.m3u8 + media playlists (HLS)</text>
+  <text class="t s" x="658" y="316">manifest.mpd (DASH), manifest.json</text>
+
+  <path class="arrow" d="M895,170 L895,226"/>
+
+  <rect class="box" x="300" y="230" width="280" height="110" rx="14" fill="#ffdeeb"/>
+  <text class="t h" x="318" y="265">axum server :8101</text>
+  <text class="t s" x="318" y="292">/api/manifest, /api/renditions</text>
+  <text class="t s" x="318" y="316">/media/* MIME + CORS</text>
+
+  <path class="arrow" d="M640,285 L584,285"/>
+
+  <rect class="box" x="20" y="230" width="230" height="110" rx="14" fill="#c5f6fa"/>
+  <text class="t h" x="38" y="265">React UI :5101</text>
+  <text class="t s" x="38" y="292">hls.js, dash.js</text>
+  <text class="t s" x="38" y="316">force level, ladder view</text>
+
+  <path class="arrow" d="M300,285 L254,285"/>
+
+  <rect class="box" x="20" y="390" width="1000" height="100" rx="14" fill="#f1f3f5"/>
+  <text class="t h" x="40" y="425">Same bytes, two protocols</text>
+  <text class="t s" x="40" y="452">HLS and DASH both point at one set of CMAF segments per rendition.</text>
+  <text class="t s" x="40" y="476">Fixed GOP = segment length, so every rung has an IDR at 0, 2, 4 ... seconds and ABR can switch at any boundary.</text>
+</svg>
