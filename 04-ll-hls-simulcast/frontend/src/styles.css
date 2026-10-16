@@ -1,0 +1,201 @@
+:root {
+  --bg: #f7f8fb;
+  --card: #ffffff;
+  --ink: #1d2433;
+  --muted: #667085;
+  --line: #e4e7ec;
+  --ll: #2f6fed;
+  --regular: #e8833a;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+}
+
+main {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 24px 16px 40px;
+}
+
+header h1 {
+  margin: 0 0 6px;
+  font-size: 26px;
+}
+
+header p {
+  margin: 0 0 18px;
+  color: var(--muted);
+  max-width: 900px;
+  line-height: 1.5;
+}
+
+.toggle {
+  display: inline-flex;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 4px;
+  margin-bottom: 18px;
+}
+
+.toggle button {
+  border: 0;
+  background: transparent;
+  padding: 8px 18px;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.toggle button.active {
+  background: var(--ink);
+  color: #fff;
+}
+
+.stage {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 18px;
+}
+
+@media (max-width: 960px) {
+  .stage {
+    grid-template-columns: 1fr;
+  }
+}
+
+.player,
+.panel {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px;
+}
+
+video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #0b0d12;
+  border-radius: 8px;
+  display: block;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.error {
+  color: #c4320a;
+}
+
+.clock {
+  margin-top: 10px;
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  padding: 10px 14px;
+  background: #f2f4f7;
+  border-radius: 8px;
+}
+
+.clock .label {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.clock .digits {
+  font-family: ui-monospace, Menlo, monospace;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.panel h2 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+.chart {
+  width: 100%;
+  height: auto;
+}
+
+.chart .grid {
+  stroke: var(--line);
+}
+
+.chart .tick {
+  font-size: 11px;
+  fill: var(--muted);
+}
+
+.chart .line {
+  fill: none;
+  stroke-width: 2.5;
+  stroke-linejoin: round;
+}
+
+.chart .line.ll {
+  stroke: var(--ll);
+}
+
+.chart .line.regular {
+  stroke: var(--regular);
+}
+
+.legend {
+  display: flex;
+  gap: 18px;
+  font-size: 13px;
+  color: var(--muted);
+  margin: 4px 0 12px;
+}
+
+.swatch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  margin-right: 6px;
+}
+
+.swatch.ll {
+  background: var(--ll);
+}
+
+.swatch.regular {
+  background: var(--regular);
+}
+
+.stats {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.stats th,
+.stats td {
+  text-align: right;
+  padding: 7px 6px;
+  border-bottom: 1px solid var(--line);
+}
+
+.stats th:first-child,
+.stats td:first-child {
+  text-align: left;
+}
+
+.stats tr.active td {
+  font-weight: 700;
+}

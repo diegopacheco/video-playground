@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 560" width="1240" height="560">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&amp;display=swap');
+      text { font-family: 'Caveat', 'Comic Sans MS', cursive; fill: #1d2433; }
+      .title { font-size: 26px; font-weight: 700; }
+      .body { font-size: 19px; }
+      .small { font-size: 17px; }
+      .box { stroke: #1d2433; stroke-width: 2.2; filter: url(#wobble); }
+      .arrow { stroke: #1d2433; stroke-width: 2.4; fill: none; marker-end: url(#head); filter: url(#wobble); }
+    </style>
+    <filter id="wobble">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="4" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3"/>
+    </filter>
+    <marker id="head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1d2433"/>
+    </marker>
+  </defs>
+  <rect width="1240" height="560" fill="#ffffff"/>
+
+  <rect class="box" x="30" y="40" width="230" height="90" rx="14" fill="#fde2e4"/>
+  <text class="title" x="145" y="78" text-anchor="middle">lavfi testsrc2</text>
+  <text class="body" x="145" y="108" text-anchor="middle">1280x720 @ 30 fps</text>
+
+  <rect class="box" x="30" y="170" width="230" height="110" rx="14" fill="#e2ece9"/>
+  <text class="title" x="145" y="206" text-anchor="middle">Rust clock strip</text>
+  <text class="body" x="145" y="234" text-anchor="middle">UTC time in ms, 30 fps</text>
+  <text class="body" x="145" y="260" text-anchor="middle">rawvideo to ffmpeg stdin</text>
+
+  <rect class="box" x="320" y="90" width="250" height="150" rx="14" fill="#fff1c1"/>
+  <text class="title" x="445" y="126" text-anchor="middle">ffmpeg</text>
+  <text class="body" x="445" y="156" text-anchor="middle">overlay + libx264 zerolatency</text>
+  <text class="body" x="445" y="182" text-anchor="middle">GOP 60 = 2 s segment</text>
+  <text class="body" x="445" y="208" text-anchor="middle">fMP4 fragment = 200 ms part</text>
+
+  <rect class="box" x="630" y="30" width="330" height="290" rx="16" fill="#dbe7ff"/>
+  <text class="title" x="795" y="66" text-anchor="middle">Rust origin (axum)</text>
+  <rect class="box" x="655" y="84" width="280" height="56" rx="10" fill="#ffffff"/>
+  <text class="body" x="795" y="118" text-anchor="middle">BoxSplitter + ingest: moof/mdat to parts</text>
+  <rect class="box" x="655" y="156" width="280" height="56" rx="10" fill="#ffffff"/>
+  <text class="body" x="795" y="190" text-anchor="middle">LiveStream window + watch (blocking)</text>
+  <rect class="box" x="655" y="228" width="280" height="76" rx="10" fill="#ffffff"/>
+  <text class="body" x="795" y="258" text-anchor="middle">PlaylistBuilder trait</text>
+  <text class="small" x="795" y="284" text-anchor="middle">LowLatencyPlaylist | RegularPlaylist</text>
+
+  <rect class="box" x="1000" y="40" width="230" height="110" rx="14" fill="#e8dcff"/>
+  <text class="title" x="1115" y="76" text-anchor="middle">/live/ll.m3u8</text>
+  <text class="small" x="1115" y="104" text-anchor="middle">EXT-X-PART, PRELOAD-HINT</text>
+  <text class="body" x="1115" y="130" text-anchor="middle">_HLS_msn / _HLS_part</text>
+
+  <rect class="box" x="1000" y="190" width="230" height="110" rx="14" fill="#ffe4cc"/>
+  <text class="title" x="1115" y="226" text-anchor="middle">/live/hls.m3u8</text>
+  <text class="body" x="1115" y="254" text-anchor="middle">whole 2 s segments</text>
+  <text class="body" x="1115" y="280" text-anchor="middle">HOLD-BACK 6 s</text>
+
+  <rect class="box" x="420" y="390" width="400" height="140" rx="16" fill="#d8f3dc"/>
+  <text class="title" x="620" y="426" text-anchor="middle">React + hls.js player</text>
+  <text class="body" x="620" y="456" text-anchor="middle">toggle: lowLatencyMode on / off</text>
+  <text class="body" x="620" y="482" text-anchor="middle">latency = Date.now() - hls.playingDate</text>
+  <text class="body" x="620" y="508" text-anchor="middle">live SVG chart + min/avg/p50/p95</text>
+
+  <path class="arrow" d="M262,90 C290,95 300,120 316,135"/>
+  <path class="arrow" d="M262,220 C290,215 300,200 316,190"/>
+  <path class="arrow" d="M572,165 C600,165 612,150 626,140"/>
+  <text class="small" x="598" y="196" text-anchor="middle">stdout</text>
+  <path class="arrow" d="M962,110 C978,100 986,95 996,95"/>
+  <path class="arrow" d="M962,250 C978,248 986,246 996,246"/>
+  <path class="arrow" d="M795,322 C795,350 760,365 740,386"/>
+  <text class="small" x="880" y="366" text-anchor="middle">both playlists via Vite proxy /live</text>
+</svg>

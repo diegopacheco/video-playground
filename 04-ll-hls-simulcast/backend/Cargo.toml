@@ -1,0 +1,21 @@
+[package]
+name = "llhls"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "llhls"
+path = "src/lib.rs"
+
+[[bin]]
+name = "origin"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1"
+axum = "0.8"
+thiserror = "2"
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "net", "sync", "time", "process", "io-util"] }
+
+[dev-dependencies]
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "net", "sync", "time", "process", "io-util", "test-util"] }
