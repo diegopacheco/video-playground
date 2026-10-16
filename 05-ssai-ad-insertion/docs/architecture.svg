@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 600" width="1100" height="600">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&amp;display=swap');
+      text { font-family: 'Caveat', 'Comic Sans MS', cursive; fill: #1d2433; }
+      .t { font-size: 24px; font-weight: 700; }
+      .s { font-size: 18px; }
+      .l { font-size: 17px; fill: #4a5268; }
+      .box { stroke: #1d2433; stroke-width: 2.2; filter: url(#wobble); }
+      .arrow { stroke: #1d2433; stroke-width: 2; fill: none; marker-end: url(#head); }
+    </style>
+    <filter id="wobble">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" seed="7" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3"/>
+    </filter>
+    <marker id="head" markerWidth="12" markerHeight="10" refX="10" refY="5" orient="auto">
+      <path d="M0,0 L11,5 L0,10" fill="none" stroke="#1d2433" stroke-width="2"/>
+    </marker>
+  </defs>
+  <rect width="1100" height="600" fill="#fdfcf8"/>
+
+  <rect class="box" x="30" y="40" width="220" height="120" rx="14" fill="#ffe8cc"/>
+  <text class="t" x="50" y="75">setup.sh + ffmpeg</text>
+  <text class="s" x="50" y="105">content 60s, 5 creatives</text>
+  <text class="s" x="50" y="130">h264 main 640x360 24fps</text>
+  <text class="s" x="50" y="150">aac 48k, 2s segments</text>
+
+  <rect class="box" x="20" y="230" width="270" height="150" rx="14" fill="#fff3bf"/>
+  <text class="t" x="50" y="265">media/</text>
+  <text class="s" x="50" y="295">content.m3u8</text>
+  <text class="s" x="50" y="318">CUE-OUT 20s at 10s</text>
+  <text class="s" x="50" y="341">DATERANGE SCTE35-OUT 12s</text>
+  <text class="s" x="50" y="364">ads/acme ... ads/slate</text>
+
+  <rect class="box" x="340" y="40" width="430" height="400" rx="16" fill="#e7f5ff"/>
+  <text class="t" x="360" y="75">Rust stitcher (axum, port 8105)</text>
+
+  <rect class="box" x="365" y="100" width="170" height="70" rx="10" fill="#ffffff"/>
+  <text class="s" x="380" y="130">Playlist parser</text>
+  <text class="l" x="380" y="155">Entry: Segment, CueOut...</text>
+
+  <rect class="box" x="575" y="100" width="175" height="90" rx="10" fill="#d3f9d8"/>
+  <text class="s" x="590" y="128">AdDecisionService</text>
+  <text class="l" x="590" y="152">region targeting</text>
+  <text class="l" x="590" y="174">premium = bypass</text>
+
+  <rect class="box" x="365" y="230" width="385" height="90" rx="10" fill="#ffffff"/>
+  <text class="s" x="380" y="260">ManifestStitcher</text>
+  <text class="l" x="380" y="284">drop break content, insert pod, DISCONTINUITY</text>
+  <text class="l" x="380" y="306">before each creative and before content resumes</text>
+
+  <rect class="box" x="365" y="350" width="175" height="70" rx="10" fill="#f3d9fa"/>
+  <text class="s" x="380" y="378">/api/track/...</text>
+  <text class="l" x="380" y="402">quartile per segment</text>
+
+  <rect class="box" x="575" y="350" width="175" height="70" rx="10" fill="#f3d9fa"/>
+  <text class="s" x="590" y="378">BeaconSink</text>
+  <text class="l" x="590" y="402">dedupes retries</text>
+
+  <rect class="box" x="850" y="40" width="220" height="400" rx="16" fill="#fff0f6"/>
+  <text class="t" x="870" y="75">React UI (5105)</text>
+  <text class="s" x="870" y="115">user picker</text>
+  <text class="s" x="870" y="150">hls.js player</text>
+  <text class="s" x="870" y="185">break summary</text>
+  <text class="s" x="870" y="220">raw vs stitched</text>
+  <text class="s" x="870" y="245">manifest side by side</text>
+  <text class="s" x="870" y="280">beacon log (1s poll)</text>
+
+  <path class="arrow" d="M140,160 L140,225"/>
+  <text class="l" x="150" y="200">writes</text>
+  <path class="arrow" d="M290,300 C320,300 320,140 360,138"/>
+  <text class="l" x="300" y="225">parse</text>
+  <path class="arrow" d="M450,170 L450,226"/>
+  <path class="arrow" d="M660,190 L660,226"/>
+  <text class="l" x="674" y="210">pod</text>
+  <path class="arrow" d="M450,320 L450,346"/>
+  <path class="arrow" d="M540,385 L571,385"/>
+  <path class="arrow" d="M770,275 L846,275"/>
+  <text class="l" x="776" y="265">m3u8</text>
+  <path class="arrow" d="M960,442 C940,520 520,520 452,424"/>
+  <text class="l" x="560" y="535">player fetches ad segments, beacons fire</text>
+  <path class="arrow" d="M752,385 C800,385 810,300 846,300"/>
+
+  <text class="l" x="30" y="585">free users get a pod that fills the break exactly (ads first, 2s slate to pad); premium users get the original content untouched</text>
+</svg>

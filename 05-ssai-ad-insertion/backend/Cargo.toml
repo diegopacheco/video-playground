@@ -1,0 +1,24 @@
+[package]
+name = "ssai"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "ssai"
+path = "src/lib.rs"
+
+[[bin]]
+name = "ssai"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1"
+axum = "0.8"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "net", "fs"] }
+
+[dev-dependencies]
+tower = { version = "0.5", features = ["util"] }
+http-body-util = "0.1"
