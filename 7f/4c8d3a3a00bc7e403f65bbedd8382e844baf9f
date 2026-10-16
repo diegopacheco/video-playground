@@ -1,0 +1,111 @@
+12-drm-license-server/frontend/src/components/ScenarioPanel.tsx
+  s_b21fc2ba85cee9::t_d2a512e22e0d3b 1-24
+12-drm-license-server/backend/src/keystore.rs
+  s_b21fc2ba85cee9::t_1d42feedd846a9 1-40
+12-drm-license-server/.gitignore
+  s_b21fc2ba85cee9::t_1a651a61e8cd5d 1-5
+12-drm-license-server/frontend/src/components/EventLog.tsx
+  s_b21fc2ba85cee9::t_10b424a729e2d0 1-16
+12-drm-license-server/scripts/setup.sh
+  s_b21fc2ba85cee9::t_1db5ec29d8460e 1-71
+12-drm-license-server/backend/Cargo.toml
+  s_b21fc2ba85cee9::t_1bc62674d87423 1-27
+12-drm-license-server/frontend/vite.config.ts
+  s_b21fc2ba85cee9::t_5c34408aed321c 8
+  s_b21fc2ba85cee9::t_281f1b87db8ecb 1-7,9-17
+12-drm-license-server/scripts/test-all.sh
+  s_b21fc2ba85cee9::t_c7ea8b9cc63531 1-13
+12-drm-license-server/backend/src/url_signer.rs
+  s_b21fc2ba85cee9::t_aae77cacb683fd 1-85
+12-drm-license-server/backend/src/crypto.rs
+  s_b21fc2ba85cee9::t_be4a491e50b169 1-20,22-77
+  s_b21fc2ba85cee9::t_68a1ab73e6badd 21
+12-drm-license-server/backend/src/config.rs
+  s_b21fc2ba85cee9::t_291d9e6c973878 1-52
+12-drm-license-server/frontend/src/components/PlayerView.tsx
+  s_b21fc2ba85cee9::t_e203f05532f910 1-22
+12-drm-license-server/frontend/src/types/index.ts
+  s_b21fc2ba85cee9::t_dbcbe02ec85a9d 1-46
+12-drm-license-server/backend/src/error.rs
+  s_b21fc2ba85cee9::t_4659e3caebcc83 1-61
+12-drm-license-server/frontend/src/scenarios.test.ts
+  s_b21fc2ba85cee9::t_f67e882deba4f2 1-44
+12-drm-license-server/frontend/index.html
+  s_b21fc2ba85cee9::t_4049308434cc94 1-12
+12-drm-license-server/backend/src/license.rs
+  s_b21fc2ba85cee9::t_4c2700bf6f484e 1-154
+12-drm-license-server/README.md
+  s_b21fc2ba85cee9::t_9676e10e666820 1-107,109-157
+  s_b21fc2ba85cee9::t_928e54d9465b67 108
+12-drm-license-server/frontend/src/App.tsx
+  s_b21fc2ba85cee9::t_c4b547760846af 1-40
+12-drm-license-server/frontend/src/components/LicensePanel.tsx
+  s_b21fc2ba85cee9::t_dcc1c21cdb7639 1-29
+12-drm-license-server/docs/architecture.svg
+  s_b21fc2ba85cee9::t_166ba5782e2108 2-17,19-71,73-75,77-78,80
+  s_b21fc2ba85cee9::t_3d6742b47d3632 1,18,72,76,79
+12-drm-license-server/scripts/start-all.sh
+  s_b21fc2ba85cee9::t_ce7828898bd4f2 1-35
+12-drm-license-server/frontend/package.json
+  s_b21fc2ba85cee9::t_bc8d2585834599 1-24
+12-drm-license-server/frontend/src/styles.css
+  s_b21fc2ba85cee9::t_778d6a7ec78483 1-198
+12-drm-license-server/backend/src/session.rs
+  s_b21fc2ba85cee9::t_1145b5a728892e 1-102
+12-drm-license-server/frontend/src/hooks/useDrmPlayer.ts
+  s_b21fc2ba85cee9::t_aaf13f3b622d5f 1-105
+12-drm-license-server/backend/src/lib.rs
+  s_b21fc2ba85cee9::t_11ff9427ab71cf 1-9
+12-drm-license-server/frontend/src/main.tsx
+  s_b21fc2ba85cee9::t_44ad41ad8c8b48 1-13
+12-drm-license-server/frontend/tsconfig.json
+  s_b21fc2ba85cee9::t_fd05488910e84e 1-18
+12-drm-license-server/scripts/stop-all.sh
+  s_b21fc2ba85cee9::t_82fcd836050371 1-17
+12-drm-license-server/frontend/src/scenarios.ts
+  s_b21fc2ba85cee9::t_52df0fcb3a59ca 1-81
+12-drm-license-server/backend/tests/http.rs
+  s_b21fc2ba85cee9::t_dba862c8d4622c 1-152
+12-drm-license-server/frontend/src/vite-env.d.ts
+  s_b21fc2ba85cee9::t_4f311a91b61576 1
+12-drm-license-server/frontend/src/api/client.ts
+  s_b21fc2ba85cee9::t_ee14b1f684408c 1-36
+12-drm-license-server/backend/src/audit.rs
+  s_b21fc2ba85cee9::t_940e34dbe937df 1-36
+12-drm-license-server/frontend/src/components/AuditPanel.tsx
+  s_b21fc2ba85cee9::t_6d4a836a2b2e85 1-29
+12-drm-license-server/backend/src/main.rs
+  s_b21fc2ba85cee9::t_25045593bbb4ab 1-30
+12-drm-license-server/scripts/status.sh
+  s_b21fc2ba85cee9::t_928e54d9465b67 1-16
+12-drm-license-server/backend/src/http.rs
+  s_b21fc2ba85cee9::t_9b0ea155d546fb 1-161
+12-drm-license-server/frontend/src/hooks/useAudit.ts
+  s_b21fc2ba85cee9::t_4f8e770d677e9b 1-21
+12-drm-license-server/backend/Cargo.lock
+  s_b21fc2ba85cee9::t_60159aa04ca3d8 1-621
+12-drm-license-server/frontend/bun.lock
+  s_b21fc2ba85cee9::t_915c2d65a64207 1-209
+12-drm-license-server/scripts/common.sh
+  s_b21fc2ba85cee9::t_659e7b7192c437 1-122
+12-drm-license-server/scripts/ports.env
+  s_b21fc2ba85cee9::t_41de85b4e17aa6 1-2
+12-drm-license-server/scripts/ui.sh
+  s_b21fc2ba85cee9::t_a12a426781f62d 1-12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "7f4c8d3a3a00bc7e403f65bbedd8382e844baf9f",
+  "prompts": {},
+  "sessions": {
+    "s_b21fc2ba85cee9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36239a68-0214-46fa-90ab-e0d06be57d68",
+        "model": "unknown"
+      },
+      "human_author": "diegopacheco <diego.pacheco.it@gmail.com>"
+    }
+  }
+}
