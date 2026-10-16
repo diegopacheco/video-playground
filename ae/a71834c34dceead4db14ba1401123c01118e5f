@@ -1,0 +1,117 @@
+10-resume-watching/scripts/sql-console.sh
+  s_b21fc2ba85cee9::t_7c2a88b31b0c84 25-29
+  s_b21fc2ba85cee9::t_53f4857767266d 1-24,30-40
+10-resume-watching/scripts/status.sh
+  s_b21fc2ba85cee9::t_01ff0684d65b9d 1-14
+10-resume-watching/frontend/src/components/StatsBar.tsx
+  s_b21fc2ba85cee9::t_f53159711ac864 1-37
+10-resume-watching/backend/src/error.rs
+  s_b21fc2ba85cee9::t_3f1218c2777f57 1-17
+10-resume-watching/backend/src/main.rs
+  s_b21fc2ba85cee9::t_ccc05a3f7f29f5 1-32
+10-resume-watching/backend/src/row.rs
+  s_b21fc2ba85cee9::t_af8809b185af4e 1-93
+10-resume-watching/frontend/src/css.d.ts
+  s_b21fc2ba85cee9::t_4095399bd2b6d5 1
+10-resume-watching/frontend/src/App.tsx
+  s_b21fc2ba85cee9::t_02635ff01e412c 1-45
+10-resume-watching/scripts/ui.sh
+  s_b21fc2ba85cee9::t_45629c91d6cc80 1-12
+10-resume-watching/backend/Cargo.toml
+  s_b21fc2ba85cee9::t_14e40372ae79eb 1-26
+10-resume-watching/backend/src/lib.rs
+  s_b21fc2ba85cee9::t_3e058c7d210a98 1-7
+10-resume-watching/frontend/src/types/index.ts
+  s_b21fc2ba85cee9::t_bac520ac9ac309 1-47
+10-resume-watching/frontend/index.html
+  s_b21fc2ba85cee9::t_ae5a632e940329 1-12
+10-resume-watching/frontend/src/lib/playback.test.ts
+  s_b21fc2ba85cee9::t_09e9a2007023c9 1-30
+10-resume-watching/scripts/stop-all.sh
+  s_b21fc2ba85cee9::t_ff6c9ed7ff89a4 1-18
+10-resume-watching/frontend/src/lib/playback.ts
+  s_b21fc2ba85cee9::t_c68fdfc1a0b2c4 1-32
+10-resume-watching/frontend/src/styles.css
+  s_b21fc2ba85cee9::t_7b88919a185da0 1-284
+10-resume-watching/scripts/ports.env
+  s_b21fc2ba85cee9::t_0e70644d057f30 1-4
+10-resume-watching/scripts/start-all.sh
+  s_b21fc2ba85cee9::t_f771ce0721bb6d 1-52
+10-resume-watching/scripts/test-all.sh
+  s_b21fc2ba85cee9::t_80a792109cdc76 1-21
+10-resume-watching/frontend/src/components/DevicePanel.tsx
+  s_b21fc2ba85cee9::t_9726b26b095018 1-62
+10-resume-watching/README.md
+  s_b21fc2ba85cee9::t_20da7f4bebc275 1-172
+10-resume-watching/frontend/src/hooks/useDevice.ts
+  s_b21fc2ba85cee9::t_29448d31a0bb60 1-104
+10-resume-watching/backend/src/bin/loadgen.rs
+  s_b21fc2ba85cee9::t_ad26cf59cf4e2c 1-224
+  s_b21fc2ba85cee9::t_a4e7016452f766 225-227
+10-resume-watching/backend/tests/stores.rs
+  s_b21fc2ba85cee9::t_57c0ebb82758cd 1-19,24-110
+  s_b21fc2ba85cee9::t_b1716b9a5e1aad 20-23
+  s_b21fc2ba85cee9::t_6b27915d70b65b 111-113
+10-resume-watching/.gitignore
+  s_b21fc2ba85cee9::t_0e70644d057f30 1-4
+10-resume-watching/frontend/package.json
+  s_b21fc2ba85cee9::t_8242d178c6b17f 1-22
+10-resume-watching/backend/src/config.rs
+  s_b21fc2ba85cee9::t_5a5be1484fd961 1-35
+10-resume-watching/backend/src/store/mod.rs
+  s_b21fc2ba85cee9::t_6f27a628059ae2 1-28
+10-resume-watching/docs/architecture.svg
+  s_b21fc2ba85cee9::t_7cda479f2127f5 1-68
+10-resume-watching/frontend/tsconfig.json
+  s_b21fc2ba85cee9::t_8a3ea199f8a9ce 1-20
+10-resume-watching/frontend/src/main.tsx
+  s_b21fc2ba85cee9::t_ace9d9f6369be4 1-13
+10-resume-watching/backend/src/store/scylla_store.rs
+  s_b21fc2ba85cee9::t_bd3b59219cb8d9 3-14,16-97,102-105
+  s_b21fc2ba85cee9::t_524c4ec32c6c2e 98-101
+  s_b21fc2ba85cee9::t_46ea613eeadef9 1-2,15
+10-resume-watching/frontend/src/components/ContinueRow.tsx
+  s_b21fc2ba85cee9::t_ab88a37023f729 1-46
+10-resume-watching/backend/src/store/redis_store.rs
+  s_b21fc2ba85cee9::t_3331662d70ccb9 1-78
+10-resume-watching/frontend/src/hooks/usePoll.ts
+  s_b21fc2ba85cee9::t_0c1e47bb4f78df 1-23
+10-resume-watching/scripts/common.sh
+  s_b21fc2ba85cee9::t_0e70644d057f30 29-31
+  s_b21fc2ba85cee9::t_1769fb4cd5079b 1-28,32-121
+10-resume-watching/podman-compose.yml
+  s_b21fc2ba85cee9::t_0e1aabd754cee7 10,12
+  s_b21fc2ba85cee9::t_120850dc4ac252 1-9,11
+10-resume-watching/frontend/src/api/client.ts
+  s_b21fc2ba85cee9::t_f48412b443f0ca 1-34
+10-resume-watching/backend/src/coalescer.rs
+  s_b21fc2ba85cee9::t_e5772adc553911 1-223
+10-resume-watching/backend/src/api.rs
+  s_b21fc2ba85cee9::t_6d10790c1ee8c6 1-98
+10-resume-watching/backend/src/model.rs
+  s_b21fc2ba85cee9::t_3cc1371bc0a887 1-96
+10-resume-watching/scripts/setup.sh
+  s_b21fc2ba85cee9::t_0363cd0588c6c5 1-16
+10-resume-watching/frontend/vite.config.ts
+  s_b21fc2ba85cee9::t_73a3200bf34dcd 1-15
+10-resume-watching/backend/Cargo.lock
+  s_b21fc2ba85cee9::t_62729a82c4f9f7 1-1680
+10-resume-watching/frontend/bun.lock
+  s_b21fc2ba85cee9::t_97638b35a3fe05 1-154
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "aea71834c34dceead4db14ba1401123c01118e5f",
+  "prompts": {},
+  "sessions": {
+    "s_b21fc2ba85cee9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36239a68-0214-46fa-90ab-e0d06be57d68",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "diegopacheco <diego.pacheco.it@gmail.com>"
+    }
+  }
+}
