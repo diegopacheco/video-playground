@@ -1,0 +1,1 @@
+{"evictions":0,"origin_offload":0.9988535199802805,"misses":682,"stale":13187,"origin_fetches":2000,"origin_errors":0,"cache_bytes":32773000,"requests":1744470,"coalesced":182,"revalidations":1500,"hit_ratio":0.9996090503132756,"cache_entries":500,"cache_capacity_bytes":41943040,"in_flight":0,"hits":1730601}

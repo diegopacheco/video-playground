@@ -1,0 +1,6 @@
+requests=1744474 rps=43566.7 failed=0.00%
+client_hit_ratio=99.96%
+all     avg=0.94ms p50=0.49ms p95=2.76ms p99=7.45ms max=129.66ms
+hit     avg=0.92ms p50=0.49ms p95=2.75ms p99=7.29ms max=129.66ms
+stale   avg=0.95ms p50=0.49ms p95=2.69ms p99=7.91ms max=109.69ms
+miss    avg=76.35ms p50=82.37ms p95=95.00ms p99=112.01ms max=126.83ms

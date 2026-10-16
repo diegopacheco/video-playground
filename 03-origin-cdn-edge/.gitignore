@@ -1,0 +1,7 @@
+.run/
+backend/target/
+frontend/node_modules/
+frontend/dist/
+k6/results/*.txt
+k6/results/*.json
+k6/results/*.log

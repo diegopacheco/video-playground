@@ -1,0 +1,1 @@
+{"requests":2000,"unique_keys":500,"config":{"latency_ms":80,"segment_bytes":65536,"max_age":10,"stale_while_revalidate":30}}
