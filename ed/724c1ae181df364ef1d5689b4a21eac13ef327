@@ -1,0 +1,147 @@
+15-recommendations/frontend/src/components/TitleCard.tsx
+  s_b21fc2ba85cee9::t_32466e00af7f13 1-24
+15-recommendations/frontend/src/types/index.ts
+  s_b21fc2ba85cee9::t_08ebb969fb30ff 1-86
+15-recommendations/backend/src/error.rs
+  s_b21fc2ba85cee9::t_c2c047bf221b9b 1-27
+15-recommendations/backend/src/eval.rs
+  s_b21fc2ba85cee9::t_6f0790a33a4a22 113-114,124-125
+  s_b21fc2ba85cee9::t_862b871d0c476a 76,78-79
+  s_b21fc2ba85cee9::t_fc4dfa64fb6a45 1-75,77,80-112,115-123,126-130
+15-recommendations/frontend/tsconfig.json
+  s_b21fc2ba85cee9::t_b9846a4d715c26 1-17
+15-recommendations/backend/tests/api.rs
+  s_b21fc2ba85cee9::t_ed58efd16db11a 1-98
+15-recommendations/backend/src/recommender.rs
+  s_b21fc2ba85cee9::t_0fc81426a80fee 1-227
+15-recommendations/frontend/src/components/TitleDrawer.tsx
+  s_b21fc2ba85cee9::t_94597a49279a89 1-85
+15-recommendations/backend/src/api.rs
+  s_b21fc2ba85cee9::t_17c0aca03847aa 1-105
+15-recommendations/frontend/vite.config.ts
+  s_b21fc2ba85cee9::t_511c13ae80ec6a 1-14
+15-recommendations/scripts/status.sh
+  s_b21fc2ba85cee9::t_2added483c7d6c 1-14
+15-recommendations/docs/architecture.svg
+  s_b21fc2ba85cee9::t_7da8b74af20e9d 1,19,65,68
+  s_b21fc2ba85cee9::t_1236a47ad68743 2,4-18,20-64,66-67,69-72
+  s_b21fc2ba85cee9::t_f67f3abeaebc39 3
+15-recommendations/frontend/src/lib/display.test.ts
+  s_b21fc2ba85cee9::t_45d56c450d77cf 1-35
+15-recommendations/backend/src/store/mem.rs
+  s_b21fc2ba85cee9::t_14eea78035da71 1-103
+15-recommendations/scripts/ports.env
+  s_b21fc2ba85cee9::t_a0b4067f6a3511 1-3
+15-recommendations/backend/Cargo.toml
+  s_b21fc2ba85cee9::t_7b9b90e5a57e9f 1-27,29
+  s_b21fc2ba85cee9::t_37d516f60e75a4 28
+15-recommendations/backend/src/embed.rs
+  s_b21fc2ba85cee9::t_6438a7b81c7b24 1-122,124-147
+  s_b21fc2ba85cee9::t_a05167c4370b32 123
+15-recommendations/.gitignore
+  s_b21fc2ba85cee9::t_a425377462fc4e 1-4
+15-recommendations/backend/src/bin/eval.rs
+  s_b21fc2ba85cee9::t_6f0790a33a4a22 5-8
+  s_b21fc2ba85cee9::t_e87d0f56e11942 1-4,9
+15-recommendations/backend/src/rng.rs
+  s_b21fc2ba85cee9::t_ac265ca9125bdc 1-65
+15-recommendations/backend/src/types.rs
+  s_b21fc2ba85cee9::t_e9aad8c32c12fb 1-50
+15-recommendations/db/init.sql
+  s_b21fc2ba85cee9::t_8f5fb667d50ce1 1
+15-recommendations/backend/src/cf.rs
+  s_b21fc2ba85cee9::t_bbc1ca0bc72ca1 1-83
+15-recommendations/backend/src/main.rs
+  s_b21fc2ba85cee9::t_0a9c699acfda0a 1-16
+15-recommendations/frontend/src/components/Onboarding.tsx
+  s_b21fc2ba85cee9::t_836601f472fb0a 1-48
+15-recommendations/backend/src/service.rs
+  s_b21fc2ba85cee9::t_7a7e6766fb5101 1-306
+15-recommendations/backend/src/popularity.rs
+  s_b21fc2ba85cee9::t_45c4559668a761 1-28
+15-recommendations/backend/tests/pg.rs
+  s_b21fc2ba85cee9::t_37d516f60e75a4 5,7,21,46
+  s_b21fc2ba85cee9::t_e382c376d62347 1-4,6,8-20,22-45,47-56
+15-recommendations/backend/src/seed.rs
+  s_b21fc2ba85cee9::t_6f0790a33a4a22 2-3,85-111
+  s_b21fc2ba85cee9::t_c7fa2cbca2b7bf 1,4-29,31-81,84,112-169,171-172,175,180,182-187,195-196,199-262
+  s_b21fc2ba85cee9::t_830f7735c4a3a0 82-83,170,173-174,176-179,181,188-194,197-198
+  s_b21fc2ba85cee9::t_a05167c4370b32 30
+15-recommendations/frontend/src/styles.css
+  s_b21fc2ba85cee9::t_f7a77151fe2c6c 1-195,199-207,209-266,270-277,281-429
+  s_b21fc2ba85cee9::t_3ccbb7891e18b7 196-198,208,267-269,278-280
+15-recommendations/frontend/package.json
+  s_b21fc2ba85cee9::t_c554182e052fff 1-23
+15-recommendations/scripts/sql-console.sh
+  s_b21fc2ba85cee9::t_95c03ec230db42 1-14
+15-recommendations/backend/src/lib.rs
+  s_b21fc2ba85cee9::t_aaa143be8bfd42 1-13
+15-recommendations/README.md
+  s_b21fc2ba85cee9::t_f67f3abeaebc39 92-93,95
+  s_b21fc2ba85cee9::t_10e5b5c98e31ff 1-91,94,96-159
+15-recommendations/backend/src/model.rs
+  s_b21fc2ba85cee9::t_c5aca6b132a7b2 1-60
+15-recommendations/backend/sql/schema.sql
+  s_b21fc2ba85cee9::t_2657bf8510c84b 1-29
+15-recommendations/frontend/src/main.tsx
+  s_b21fc2ba85cee9::t_a5a0d69882d7d5 1-13
+15-recommendations/scripts/test-all.sh
+  s_b21fc2ba85cee9::t_503c3c65160d81 1-16
+15-recommendations/frontend/src/components/Evaluation.tsx
+  s_b21fc2ba85cee9::t_76992f533cfee9 1-49
+15-recommendations/frontend/index.html
+  s_b21fc2ba85cee9::t_8b49e1ceedb253 1-12
+15-recommendations/frontend/src/components/ForYou.tsx
+  s_b21fc2ba85cee9::t_9abc1ab012ff92 1-64
+15-recommendations/frontend/src/components/GenrePicker.tsx
+  s_b21fc2ba85cee9::t_c540ddbe0a3069 1-24
+15-recommendations/scripts/start-all.sh
+  s_b21fc2ba85cee9::t_09cb775cfe9ca9 1-28
+15-recommendations/scripts/stop-all.sh
+  s_b21fc2ba85cee9::t_539afd1da49404 1-21
+15-recommendations/backend/src/store/pg.rs
+  s_b21fc2ba85cee9::t_86b68508f1ee96 1-117
+15-recommendations/scripts/ui.sh
+  s_b21fc2ba85cee9::t_2added483c7d6c 1-12
+15-recommendations/scripts/setup.sh
+  s_b21fc2ba85cee9::t_9648e422f8188e 1-17
+15-recommendations/scripts/common.sh
+  s_b21fc2ba85cee9::t_2de252199852a5 107-108
+  s_b21fc2ba85cee9::t_e4bfa063f64ab8 1-106,109-145
+15-recommendations/frontend/src/api/client.ts
+  s_b21fc2ba85cee9::t_810bb94837d5fb 1-44
+15-recommendations/frontend/src/App.tsx
+  s_b21fc2ba85cee9::t_40720152af02e0 1-111
+15-recommendations/frontend/src/hooks/useAsync.ts
+  s_b21fc2ba85cee9::t_51a44d8bec2280 1-39
+15-recommendations/frontend/src/components/Catalog.tsx
+  s_b21fc2ba85cee9::t_5e764e74b7ac6e 1-91
+15-recommendations/frontend/src/components/Shelf.tsx
+  s_b21fc2ba85cee9::t_ec6530a6f54f02 1-30
+15-recommendations/podman-compose.yml
+  s_b21fc2ba85cee9::t_10535a31b8a4d1 1-16
+15-recommendations/backend/src/store.rs
+  s_b21fc2ba85cee9::t_5eb4d1bb17b7cc 1-17
+15-recommendations/frontend/src/lib/display.ts
+  s_b21fc2ba85cee9::t_51a07e7b46569f 1-51
+15-recommendations/backend/Cargo.lock
+  s_b21fc2ba85cee9::t_c83e46e7091413 1-1059
+15-recommendations/frontend/bun.lock
+  s_b21fc2ba85cee9::t_c83016cce77ef3 1-168
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "ed724c1ae181df364ef1d5689b4a21eac13ef327",
+  "prompts": {},
+  "sessions": {
+    "s_b21fc2ba85cee9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36239a68-0214-46fa-90ab-e0d06be57d68",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "diegopacheco <diego.pacheco.it@gmail.com>"
+    }
+  }
+}
