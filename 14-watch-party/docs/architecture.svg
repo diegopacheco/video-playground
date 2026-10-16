@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" width="1000" height="560">
+  <defs>
+    <filter id="wobble" filterUnits="userSpaceOnUse" x="0" y="0" width="1000" height="560">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="7" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#3b3b4f"/>
+    </marker>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&amp;display=swap');
+      text { font-family: 'Caveat', cursive; fill: #2b2b3a; }
+      .t { font-size: 26px; font-weight: 700; }
+      .s { font-size: 19px; }
+      .box { stroke: #3b3b4f; stroke-width: 2.2; filter: url(#wobble); }
+      .flow { stroke: #3b3b4f; stroke-width: 2.2; fill: none; filter: url(#wobble); }
+    </style>
+  </defs>
+  <rect width="1000" height="560" fill="#ffffff"/>
+  <text x="500" y="40" text-anchor="middle" class="t">Watch party: leader timeline + NTP clock sync + drift correction</text>
+
+  <rect x="40" y="90" width="260" height="170" rx="14" fill="#ffe8b8" class="box"/>
+  <text x="170" y="125" text-anchor="middle" class="t">Leader browser</text>
+  <text x="60" y="160" class="s">video events play/pause/seek</text>
+  <text x="60" y="188" class="s">+ 1s heartbeat sends</text>
+  <text x="60" y="216" class="s">{playing, position, rate,</text>
+  <text x="60" y="244" class="s">at = local + offset}</text>
+
+  <rect x="370" y="90" width="260" height="290" rx="14" fill="#d6ecff" class="box"/>
+  <text x="500" y="125" text-anchor="middle" class="t">Rust server (axum ws)</text>
+  <text x="390" y="162" class="s">ws session: ping -&gt; pong</text>
+  <text x="390" y="190" class="s">{t0, t1 recv, t2 send}</text>
+  <rect x="390" y="210" width="220" height="150" rx="10" fill="#e9f7e4" class="box"/>
+  <text x="500" y="238" text-anchor="middle" class="t">Hub + RoomRegistry</text>
+  <text x="405" y="268" class="s">members in join order</text>
+  <text x="405" y="294" class="s">leader-only set_state</text>
+  <text x="405" y="320" class="s">leader leaves: oldest</text>
+  <text x="405" y="346" class="s">member + rebased state</text>
+
+  <rect x="700" y="90" width="260" height="290" rx="14" fill="#f3dcf7" class="box"/>
+  <text x="830" y="125" text-anchor="middle" class="t">Follower browser</text>
+  <text x="720" y="162" class="s">keep min-RTT of 16 pongs</text>
+  <text x="720" y="190" class="s">offset = ((t1-t0)+(t2-t3))/2</text>
+  <text x="720" y="218" class="s">every 200ms:</text>
+  <text x="720" y="246" class="s">expected = pos +</text>
+  <text x="720" y="274" class="s">(serverNow - at) * rate</text>
+  <text x="720" y="302" class="s">|drift| &lt;= 40ms hold</text>
+  <text x="720" y="330" class="s">&lt; 1s nudge rate 0.95-1.05</text>
+  <text x="720" y="358" class="s">&gt;= 1s seek</text>
+
+  <rect x="40" y="420" width="260" height="110" rx="14" fill="#ffd9d2" class="box"/>
+  <text x="170" y="455" text-anchor="middle" class="t">setup.sh + ffmpeg</text>
+  <text x="60" y="488" class="s">testsrc2 clip with big</text>
+  <text x="60" y="514" class="s">burned-in timecode</text>
+
+  <rect x="370" y="420" width="260" height="110" rx="14" fill="#fff6c9" class="box"/>
+  <text x="500" y="455" text-anchor="middle" class="t">Vite dev server</text>
+  <text x="390" y="488" class="s">serves UI + /media/clip.mp4</text>
+  <text x="390" y="514" class="s">proxies /ws to the server</text>
+
+  <path d="M300,175 L368,175" class="flow" marker-end="url(#arrow)"/>
+  <text x="305" y="165" class="s">state</text>
+  <path d="M630,175 L698,175" class="flow" marker-end="url(#arrow)"/>
+  <text x="636" y="165" class="s">room</text>
+  <path d="M698,215 L632,215" class="flow" marker-end="url(#arrow)"/>
+  <text x="640" y="236" class="s">ping</text>
+  <path d="M300,475 L368,475" class="flow" marker-end="url(#arrow)"/>
+  <path d="M630,475 L830,475 L830,382" class="flow" marker-end="url(#arrow)"/>
+  <text x="660" y="465" class="s">clip + UI</text>
+  <path d="M500,418 L500,382" class="flow" marker-end="url(#arrow)"/>
+  <path d="M370,440 L335,440 L335,310 L230,310 L230,262" class="flow" marker-end="url(#arrow)"/>
+</svg>
