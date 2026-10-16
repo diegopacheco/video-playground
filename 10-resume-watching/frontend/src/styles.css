@@ -1,0 +1,284 @@
+:root {
+  --bg: #f7f8fb;
+  --card: #ffffff;
+  --ink: #1d2433;
+  --muted: #667085;
+  --line: #e3e7ef;
+  --accent: #3b5bdb;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+}
+
+main {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 24px 20px 48px;
+}
+
+.top h1 {
+  margin: 0 0 6px;
+  font-size: 26px;
+}
+
+.top p {
+  margin: 0 0 18px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+code {
+  background: #eef1f6;
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: stretch;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 18px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  min-width: 96px;
+  padding: 4px 10px;
+  border-right: 1px solid var(--line);
+}
+
+.stat span {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}
+
+.stat strong {
+  font-size: 20px;
+}
+
+.actions {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+button,
+select {
+  font: inherit;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  padding: 7px 12px;
+  background: var(--card);
+  color: var(--ink);
+  cursor: pointer;
+}
+
+button {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+button.ghost {
+  background: var(--card);
+  color: var(--ink);
+  border-color: var(--line);
+}
+
+.devices {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 16px;
+}
+
+.device {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.device header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.device h2 {
+  margin: 0;
+  font-size: 17px;
+}
+
+.screen {
+  border: 2px solid;
+  border-radius: 10px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+
+.screen strong {
+  font-size: 20px;
+}
+
+.clock {
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+}
+
+.live {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.live.on {
+  color: #c92a2a;
+  font-weight: 600;
+}
+
+.bar {
+  height: 6px;
+  background: #e9ecf2;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.bar div {
+  height: 100%;
+  transition: width 0.4s linear;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.badge {
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #f1f3f7;
+  color: var(--muted);
+}
+
+.badge.buffered,
+.badge.replaced,
+.badge.buffer {
+  background: #fff4e0;
+  border-color: #f5c46b;
+  color: #8a5a00;
+}
+
+.badge.stale,
+.badge.error {
+  background: #ffe8e8;
+  border-color: #f0a0a0;
+  color: #a12020;
+}
+
+.badge.store {
+  background: #e6f6ec;
+  border-color: #8fd3a8;
+  color: #1e6b3a;
+}
+
+.row-title {
+  margin: 28px 0 12px;
+  font-size: 19px;
+}
+
+.row {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-top: 4px solid;
+  border-radius: 10px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: stretch;
+}
+
+.card .badge {
+  align-self: flex-start;
+}
+
+.poster {
+  height: 80px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.rank {
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.empty {
+  color: var(--muted);
+}
+
+.error {
+  color: #a12020;
+}

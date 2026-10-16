@@ -1,0 +1,26 @@
+[package]
+name = "resume-watching"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+name = "server"
+path = "src/main.rs"
+
+[[bin]]
+name = "loadgen"
+path = "src/bin/loadgen.rs"
+
+[dependencies]
+anyhow = "1"
+axum = "0.8"
+redis = { version = "1.7", features = ["tokio-comp", "connection-manager"] }
+scylla = "1.9"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
+tokio = { version = "1", features = ["full"] }
+tower-http = { version = "0.6", features = ["cors"] }

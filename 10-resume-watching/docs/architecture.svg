@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="600" viewBox="0 0 1040 600">
+  <defs>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&amp;display=swap');
+      text { font-family: 'Caveat', 'Comic Sans MS', cursive; fill: #1e1e1e; }
+      .t { font-size: 24px; font-weight: 700; }
+      .s { font-size: 18px; }
+      .l { font-size: 17px; fill: #444; }
+    </style>
+    <filter id="wobble">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" seed="7" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="3"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1e1e1e"/>
+    </marker>
+  </defs>
+  <rect width="1040" height="600" fill="#ffffff"/>
+  <g filter="url(#wobble)" stroke="#1e1e1e" stroke-width="2" fill="none">
+    <rect x="30" y="40" width="210" height="300" rx="14" fill="#e7f5ff"/>
+    <rect x="50" y="95" width="170" height="90" rx="10" fill="#ffffff"/>
+    <rect x="50" y="215" width="170" height="90" rx="10" fill="#ffffff"/>
+    <rect x="320" y="40" width="250" height="120" rx="14" fill="#fff4e6"/>
+    <rect x="320" y="220" width="250" height="140" rx="14" fill="#fff9db"/>
+    <rect x="320" y="430" width="250" height="130" rx="14" fill="#f3f0ff"/>
+    <rect x="660" y="160" width="340" height="110" rx="14" fill="#ebfbee"/>
+    <rect x="660" y="310" width="340" height="120" rx="14" fill="#e6fcf5"/>
+    <rect x="660" y="40" width="340" height="80" rx="14" fill="#fff0f6"/>
+    <rect x="30" y="430" width="210" height="130" rx="14" fill="#f8f9fa"/>
+    <path d="M220 140 L318 100" marker-end="url(#arrow)"/>
+    <path d="M220 260 L318 120" marker-end="url(#arrow)"/>
+    <path d="M445 160 L445 218" marker-end="url(#arrow)"/>
+    <path d="M570 270 L658 220" marker-end="url(#arrow)"/>
+    <path d="M570 310 L658 360" marker-end="url(#arrow)"/>
+    <path d="M445 360 L445 428" marker-end="url(#arrow)" stroke-dasharray="6 5"/>
+    <path d="M760 432 L572 490" marker-end="url(#arrow)" stroke-dasharray="6 5"/>
+    <path d="M318 500 L242 500" marker-end="url(#arrow)"/>
+    <path d="M830 120 L830 158" marker-end="url(#arrow)"/>
+  </g>
+  <text x="135" y="75" class="t" text-anchor="middle">React UI</text>
+  <text x="135" y="130" class="s" text-anchor="middle">Living room TV</text>
+  <text x="135" y="155" class="l" text-anchor="middle">heartbeat every 2s</text>
+  <text x="135" y="250" class="s" text-anchor="middle">Phone</text>
+  <text x="135" y="275" class="l" text-anchor="middle">clock skew selectable</text>
+  <text x="270" y="95" class="l" text-anchor="middle">POST</text>
+  <text x="445" y="80" class="t" text-anchor="middle">Axum API</text>
+  <text x="445" y="110" class="s" text-anchor="middle">/api/heartbeat validates</text>
+  <text x="445" y="135" class="l" text-anchor="middle">user, profile, device, title, pos, ts</text>
+  <text x="445" y="255" class="t" text-anchor="middle">Coalescer</text>
+  <text x="445" y="285" class="s" text-anchor="middle">map (profile, title) to latest</text>
+  <text x="445" y="310" class="l" text-anchor="middle">older client_ts is dropped (LWW)</text>
+  <text x="445" y="335" class="l" text-anchor="middle">flush every N seconds</text>
+  <text x="615" y="235" class="l" text-anchor="middle">flush</text>
+  <text x="830" y="195" class="t" text-anchor="middle">Redis :6110</text>
+  <text x="830" y="225" class="s" text-anchor="middle">Lua compare-and-set on ts:profile</text>
+  <text x="830" y="250" class="l" text-anchor="middle">hash ph:profile title to json</text>
+  <text x="830" y="345" class="t" text-anchor="middle">ScyllaDB :6210</text>
+  <text x="830" y="375" class="s" text-anchor="middle">INSERT ... USING TIMESTAMP client_ts</text>
+  <text x="830" y="400" class="l" text-anchor="middle">PK (profile_id, title_id)</text>
+  <text x="830" y="75" class="t" text-anchor="middle">loadgen</text>
+  <text x="830" y="100" class="l" text-anchor="middle">10k devices, raw vs coalesced, both stores</text>
+  <text x="445" y="465" class="t" text-anchor="middle">Continue watching</text>
+  <text x="445" y="495" class="s" text-anchor="middle">store rows merged with buffer</text>
+  <text x="445" y="520" class="l" text-anchor="middle">newest first, drop progress over 90%</text>
+  <text x="445" y="400" class="l" text-anchor="start" dx="10">read your writes</text>
+  <text x="135" y="470" class="t" text-anchor="middle">Row in UI</text>
+  <text x="135" y="500" class="s" text-anchor="middle">polled every 1s</text>
+  <text x="135" y="525" class="l" text-anchor="middle">in buffer or persisted</text>
+</svg>

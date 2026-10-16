@@ -1,0 +1,12 @@
+services:
+  redis:
+    image: docker.io/library/redis:8.10.2-alpine
+    container_name: vp10-redis
+    ports:
+      - "6110:6379"
+  scylla:
+    image: docker.io/scylladb/scylla:2026.3.3
+    container_name: vp10-scylla
+    command: ["--smp", "1", "--memory", "750M", "--overprovisioned", "1", "--developer-mode", "1", "--broadcast-rpc-address", "127.0.0.1", "--native-transport-port", "6210"]
+    ports:
+      - "6210:6210"
