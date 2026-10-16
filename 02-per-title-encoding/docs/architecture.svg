@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="440" viewBox="0 0 1040 440">
+  <defs>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&amp;display=swap');
+      text { font-family: 'Caveat', 'Comic Sans MS', cursive; fill: #1f1f1f; }
+      .t { font-size: 24px; font-weight: 700; }
+      .s { font-size: 18px; }
+      .b { stroke: #2b2b2b; stroke-width: 2.2; }
+      .a { stroke: #2b2b2b; stroke-width: 2.2; fill: none; marker-end: url(#arrow); }
+    </style>
+    <filter id="wobble">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" seed="7" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2b2b2b"/>
+    </marker>
+  </defs>
+  <rect width="1040" height="440" fill="#fffdf8"/>
+  <g filter="url(#wobble)">
+    <rect class="b" x="20" y="30" width="210" height="120" rx="14" fill="#fde2e4"/>
+    <rect class="b" x="280" y="30" width="210" height="120" rx="14" fill="#e2ecfd"/>
+    <rect class="b" x="540" y="30" width="210" height="120" rx="14" fill="#e4f7e7"/>
+    <rect class="b" x="800" y="30" width="220" height="120" rx="14" fill="#fff1cc"/>
+    <rect class="b" x="800" y="270" width="220" height="120" rx="14" fill="#efe4fb"/>
+    <rect class="b" x="540" y="270" width="210" height="120" rx="14" fill="#dff5f5"/>
+    <rect class="b" x="280" y="270" width="210" height="120" rx="14" fill="#fde9d9"/>
+    <path class="a" d="M232,90 L276,90"/>
+    <path class="a" d="M492,90 L536,90"/>
+    <path class="a" d="M752,90 L796,90"/>
+    <path class="a" d="M910,152 L910,266"/>
+    <path class="a" d="M798,330 L754,330"/>
+    <path class="a" d="M538,330 L494,330"/>
+  </g>
+  <text class="t" x="125" y="70" text-anchor="middle">Sources (lavfi)</text>
+  <text class="s" x="125" y="98" text-anchor="middle">anime-like: flat boxes, pan</text>
+  <text class="s" x="125" y="122" text-anchor="middle">live-like: fractal, life, grain</text>
+  <text class="t" x="385" y="70" text-anchor="middle">Encoder trait</text>
+  <text class="s" x="385" y="98" text-anchor="middle">X264Cbr, 3 resolutions</text>
+  <text class="s" x="385" y="122" text-anchor="middle">x 12 bitrates per title</text>
+  <text class="t" x="645" y="70" text-anchor="middle">QualityMetric trait</text>
+  <text class="s" x="645" y="98" text-anchor="middle">Vmaf (libvmaf), Ssim</text>
+  <text class="s" x="645" y="122" text-anchor="middle">upscaled to 640x360</text>
+  <text class="t" x="910" y="70" text-anchor="middle">Hull + ladder</text>
+  <text class="s" x="910" y="98" text-anchor="middle">upper hull in log-rate space</text>
+  <text class="s" x="910" y="122" text-anchor="middle">rungs by target VMAF</text>
+  <text class="s" x="920" y="215">savings vs generic</text>
+  <text class="t" x="910" y="310" text-anchor="middle">AnalysisStore</text>
+  <text class="s" x="910" y="338" text-anchor="middle">JsonFileStore</text>
+  <text class="s" x="910" y="362" text-anchor="middle">data/analysis.json</text>
+  <text class="t" x="645" y="310" text-anchor="middle">axum API</text>
+  <text class="s" x="645" y="338" text-anchor="middle">GET/POST /api/analysis</text>
+  <text class="s" x="645" y="362" text-anchor="middle">/api/status, /api/config</text>
+  <text class="t" x="385" y="310" text-anchor="middle">React UI</text>
+  <text class="s" x="385" y="338" text-anchor="middle">SVG rate-quality curves</text>
+  <text class="s" x="385" y="362" text-anchor="middle">ladders, savings, grid</text>
+  <text class="s" x="40" y="320">browser</text>
+  <text class="s" x="40" y="344">polls status while</text>
+  <text class="s" x="40" y="368">a re-run encodes</text>
+</svg>
