@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="600" viewBox="0 0 1100 600">
+  <defs>
+    <filter id="wobble" filterUnits="userSpaceOnUse" x="0" y="0" width="1100" height="600">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="3" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4a4560"/>
+    </marker>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&amp;display=swap');
+      text { font-family: 'Caveat', 'Comic Sans MS', cursive; fill: #2b2838; }
+      .t { font-size: 24px; font-weight: 700; }
+      .s { font-size: 18px; }
+      .box { stroke: #4a4560; stroke-width: 2; filter: url(#wobble); }
+      .line { stroke: #4a4560; stroke-width: 2; fill: none; filter: url(#wobble); }
+    </style>
+  </defs>
+  <rect width="1100" height="600" fill="#fffdf8"/>
+
+  <rect class="box" x="30" y="40" width="220" height="130" rx="14" fill="#ffd6e0"/>
+  <text class="t" x="52" y="76">React UI :5115</text>
+  <text class="s" x="52" y="104">pick user / onboarding</text>
+  <text class="s" x="52" y="128">rows, title drawer</text>
+  <text class="s" x="52" y="152">catalog, evaluation</text>
+
+  <rect class="box" x="330" y="40" width="250" height="130" rx="14" fill="#d6e4ff"/>
+  <text class="t" x="352" y="76">axum API :8115</text>
+  <text class="s" x="352" y="104">/api/users/:id/recommendations</text>
+  <text class="s" x="352" y="128">/api/titles/:id (similar)</text>
+  <text class="s" x="352" y="152">/api/eval</text>
+
+  <rect class="box" x="660" y="40" width="340" height="130" rx="14" fill="#fff1c9"/>
+  <text class="t" x="682" y="76">Service</text>
+  <text class="s" x="682" y="104">builds rows: Because you watched X,</text>
+  <text class="s" x="682" y="128">Similar to Y, Top picks, Popular</text>
+  <text class="s" x="682" y="152">rebuilds the model on each write</text>
+
+  <rect class="box" x="30" y="250" width="440" height="150" rx="14" fill="#e8dcff"/>
+  <text class="t" x="52" y="286">trait Recommender</text>
+  <text class="s" x="52" y="314">CfRecommender: item-item cosine on co-watch</text>
+  <text class="s" x="52" y="338">ContentRecommender: profile vector . embeddings</text>
+  <text class="s" x="52" y="362">HybridRecommender: weights shift with history</text>
+  <text class="s" x="52" y="386">PopularityRecommender: watch counts</text>
+
+  <rect class="box" x="540" y="250" width="460" height="150" rx="14" fill="#d9f2e6"/>
+  <text class="t" x="562" y="286">In-memory Model (Rust, no ML libs)</text>
+  <text class="s" x="562" y="314">ItemCf: co-occurrence / sqrt(n_i * n_j)</text>
+  <text class="s" x="562" y="338">Embedder: TF-IDF over genres, tags, synopsis</text>
+  <text class="s" x="562" y="362">hashed into 256 dims, L2 normalized</text>
+  <text class="s" x="562" y="386">Popularity + offline eval (P@10, R@10)</text>
+
+  <rect class="box" x="30" y="470" width="300" height="100" rx="14" fill="#ffe2cc"/>
+  <text class="t" x="52" y="506">Seed generator</text>
+  <text class="s" x="52" y="534">100 titles, 500 users,</text>
+  <text class="s" x="52" y="558">6 taste clusters, ~11.8k watches</text>
+
+  <rect class="box" x="420" y="470" width="580" height="100" rx="14" fill="#d4f1f4"/>
+  <text class="t" x="442" y="506">Postgres 17 + pgvector :6115 (vp15-postgres)</text>
+  <text class="s" x="442" y="534">titles.embedding vector(256) + HNSW (vector_cosine_ops)</text>
+  <text class="s" x="442" y="558">users, watches; similar = ORDER BY embedding &lt;=&gt; $1</text>
+
+  <path class="line" d="M250,105 L328,105" marker-end="url(#arrow)"/>
+  <path class="line" d="M580,105 L658,105" marker-end="url(#arrow)"/>
+  <path class="line" d="M760,170 L450,248" marker-end="url(#arrow)"/>
+  <path class="line" d="M470,325 L538,325" marker-end="url(#arrow)"/>
+  <path class="line" d="M880,170 L880,248" marker-end="url(#arrow)"/>
+  <path class="line" d="M1000,120 C1075,120 1075,520 1002,520" marker-end="url(#arrow)"/>
+  <path class="line" d="M330,520 L418,520" marker-end="url(#arrow)"/>
+  <path class="line" d="M700,400 L700,468" marker-end="url(#arrow)"/>
+  <text class="s" x="710" y="442">save embeddings</text>
+</svg>

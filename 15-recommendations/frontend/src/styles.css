@@ -1,0 +1,429 @@
+:root {
+  --bg: #f7f6fb;
+  --panel: #ffffff;
+  --ink: #23212e;
+  --muted: #6d6a7c;
+  --line: #e6e3ef;
+  --accent: #6c4cf5;
+  --accent-soft: #eee9ff;
+  --pink: #ff5c8a;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: default;
+  opacity: 0.55;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 12px 28px;
+  background: var(--panel);
+  border-bottom: 1px solid var(--line);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.logo {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  color: white;
+  font-size: 13px;
+  background: linear-gradient(135deg, var(--accent), var(--pink));
+}
+
+.tabs {
+  display: flex;
+  gap: 4px;
+}
+
+.tabs button,
+.segmented button {
+  border: none;
+  background: transparent;
+  padding: 8px 14px;
+  border-radius: 999px;
+  color: var(--muted);
+}
+
+.tabs button.on,
+.segmented button.on {
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.user-pick {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+}
+
+select,
+input,
+textarea {
+  font: inherit;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: white;
+  color: var(--ink);
+}
+
+.primary {
+  border: none;
+  background: var(--accent);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.ghost {
+  border: 1px solid var(--line);
+  background: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+main {
+  padding: 24px 28px 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px 24px;
+  margin-bottom: 24px;
+}
+
+.panel h2,
+.profile h2 {
+  margin: 0 0 6px;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.error {
+  color: #c62848;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.profile p {
+  margin: 0;
+}
+
+.segmented {
+  display: flex;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 4px;
+}
+
+.shelf {
+  margin-top: 24px;
+}
+
+.shelf-head {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.shelf-head h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.shelf-hint {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.shelf-row {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.card {
+  flex: 0 0 150px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  text-align: left;
+  border: none;
+  background: transparent;
+  padding: 0;
+  color: var(--ink);
+}
+
+.poster {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: transform 0.15s ease;
+}
+
+.card:hover .poster {
+  transform: translateY(-3px);
+}
+
+.poster.big {
+  width: 150px;
+  flex: 0 0 150px;
+}
+
+.poster-initials {
+  font-size: 40px;
+  font-weight: 800;
+  color: rgba(35, 33, 46, 0.55);
+  letter-spacing: 2px;
+}
+
+.badge {
+  position: absolute;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: white;
+}
+
+.badge.score {
+  bottom: 8px;
+  right: 8px;
+  color: var(--accent);
+}
+
+.badge.new {
+  top: 8px;
+  left: 8px;
+  background: var(--pink);
+  color: white;
+}
+
+.badge.cold {
+  background: #2d9cdb;
+  color: white;
+}
+
+.badge.inline {
+  position: static;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.card-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.card-meta {
+  font-size: 12px;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.chip {
+  border: 1px solid var(--line);
+  background: white;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+}
+
+.chip.on {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.chips.small .chip {
+  padding: 3px 9px;
+  font-size: 12px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 10px 0;
+  max-width: 520px;
+}
+
+.field span {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(35, 33, 46, 0.25);
+  z-index: 10;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.drawer {
+  position: relative;
+  width: min(880px, 100%);
+  height: 100%;
+  overflow-y: auto;
+  background: var(--bg);
+  padding: 28px;
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.08);
+}
+
+.drawer-head {
+  display: flex;
+  gap: 20px;
+}
+
+.drawer-head h2 {
+  margin: 0 0 4px;
+}
+
+.close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  border: none;
+  background: transparent;
+  font-size: 26px;
+  color: var(--muted);
+}
+
+.catalog-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 18px;
+}
+
+.grid .card {
+  width: auto;
+}
+
+.eval {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+.eval th,
+.eval td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid var(--line);
+}
+
+.bar {
+  position: relative;
+  background: #f1eff7;
+  border-radius: 6px;
+  height: 24px;
+  min-width: 260px;
+}
+
+.bar .fill {
+  height: 100%;
+  border-radius: 6px;
+}
+
+.bar span {
+  position: absolute;
+  left: 8px;
+  top: 3px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.fill.popular {
+  background: #ffe08a;
+}
+
+.fill.cf {
+  background: #adc8ff;
+}
+
+.fill.content {
+  background: #a8e0c4;
+}
+
+.fill.hybrid {
+  background: #cdb6ff;
+}

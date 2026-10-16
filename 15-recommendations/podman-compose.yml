@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: docker.io/pgvector/pgvector:pg17
+    container_name: vp15-postgres
+    environment:
+      POSTGRES_USER: recs
+      POSTGRES_PASSWORD: recs
+      POSTGRES_DB: recs
+    ports:
+      - "${POSTGRES_PORT:-6115}:5432"
+    volumes:
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql:ro,Z
+      - vp15-pgdata:/var/lib/postgresql/data
+
+volumes:
+  vp15-pgdata:
