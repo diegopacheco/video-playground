@@ -1,0 +1,127 @@
+11-concurrent-stream-limit/frontend/package.json
+  s_b21fc2ba85cee9::t_1f9ddd08af12ee 1-23
+11-concurrent-stream-limit/.gitignore
+  s_b21fc2ba85cee9::t_45d5503fb76c9f 1-4
+11-concurrent-stream-limit/scripts/setup.sh
+  s_b21fc2ba85cee9::t_fc6b79bda7a946 1-19
+11-concurrent-stream-limit/docs/architecture.svg
+  s_b21fc2ba85cee9::t_e1b1c794a40cd6 1-29,31-72
+  s_b21fc2ba85cee9::t_f202c8a0c48e23 30
+11-concurrent-stream-limit/frontend/src/hooks/useNow.ts
+  s_b21fc2ba85cee9::t_3fc6e817b7f503 1-10
+11-concurrent-stream-limit/backend/src/memory.rs
+  s_b21fc2ba85cee9::t_90478dda914261 1-112
+11-concurrent-stream-limit/frontend/src/App.tsx
+  s_b21fc2ba85cee9::t_71a6b7363c10c0 1-76
+11-concurrent-stream-limit/frontend/src/hooks/useSnapshot.ts
+  s_b21fc2ba85cee9::t_764788cb5e0da4 1-36
+11-concurrent-stream-limit/frontend/src/api/client.ts
+  s_b21fc2ba85cee9::t_32e4ec80ad47e1 1-59
+11-concurrent-stream-limit/backend/Cargo.toml
+  s_b21fc2ba85cee9::t_707fdc3c811897 1-24
+11-concurrent-stream-limit/scripts/common.sh
+  s_b21fc2ba85cee9::t_45d5503fb76c9f 1-122
+11-concurrent-stream-limit/backend/src/lua/acquire.lua
+  s_b21fc2ba85cee9::t_3a10cfcaf5f0cc 21,25,51
+  s_b21fc2ba85cee9::t_8cf237ae994276 1-20,22-24,26,28-50,52-54
+  s_b21fc2ba85cee9::t_81a1133605cc1a 27
+11-concurrent-stream-limit/backend/src/plan.rs
+  s_b21fc2ba85cee9::t_2019e605bed4f3 1-89
+11-concurrent-stream-limit/backend/src/lua/heartbeat.lua
+  s_b21fc2ba85cee9::t_3a10cfcaf5f0cc 21
+  s_b21fc2ba85cee9::t_ad744630169472 1-20,22
+11-concurrent-stream-limit/frontend/src/components/LeaseTable.tsx
+  s_b21fc2ba85cee9::t_b5e79c1ce75cdc 1-72
+11-concurrent-stream-limit/frontend/src/hooks/useDevices.ts
+  s_b21fc2ba85cee9::t_388d6064794c8e 1-113
+11-concurrent-stream-limit/frontend/src/components/PolicyToggle.tsx
+  s_b21fc2ba85cee9::t_2a9dbe9b9096a6 1-33
+11-concurrent-stream-limit/backend/src/lua/release.lua
+  s_b21fc2ba85cee9::t_7af2171ff78c5d 1-3
+11-concurrent-stream-limit/frontend/src/components/EventLog.tsx
+  s_b21fc2ba85cee9::t_84b14ad8c913af 1-20
+11-concurrent-stream-limit/scripts/status.sh
+  s_b21fc2ba85cee9::t_88588ac6eb3046 1-14
+11-concurrent-stream-limit/frontend/src/main.tsx
+  s_b21fc2ba85cee9::t_1961cb22aab300 1-15
+11-concurrent-stream-limit/backend/src/lease.rs
+  s_b21fc2ba85cee9::t_650fb537c392c7 1-54
+11-concurrent-stream-limit/backend/src/main.rs
+  s_b21fc2ba85cee9::t_ef05c8f1a39892 1-30
+11-concurrent-stream-limit/backend/src/redis_store.rs
+  s_b21fc2ba85cee9::t_81a1133605cc1a 62
+  s_b21fc2ba85cee9::t_ed25cba235ddfc 1-61,63-183
+11-concurrent-stream-limit/frontend/src/types/index.ts
+  s_b21fc2ba85cee9::t_614b2f3b6e75f5 1-40
+11-concurrent-stream-limit/scripts/ports.env
+  s_b21fc2ba85cee9::t_45d5503fb76c9f 1-3
+11-concurrent-stream-limit/k6/churn.js
+  s_b21fc2ba85cee9::t_93537da3db1d36 1-46
+11-concurrent-stream-limit/frontend/src/lib/time.test.ts
+  s_b21fc2ba85cee9::t_c7da6e84786aec 1-35
+11-concurrent-stream-limit/README.md
+  s_b21fc2ba85cee9::t_943f41ebe15c99 1-155
+11-concurrent-stream-limit/backend/tests/race.rs
+  s_b21fc2ba85cee9::t_81a1133605cc1a 128
+  s_b21fc2ba85cee9::t_31acc6909e943d 146-147
+  s_b21fc2ba85cee9::t_e975deb9f85487 1-127,129-145,148-275
+11-concurrent-stream-limit/backend/tests/http.rs
+  s_b21fc2ba85cee9::t_e0da39f8194d59 1-82
+11-concurrent-stream-limit/scripts/stop-all.sh
+  s_b21fc2ba85cee9::t_f268cb6e6a70c2 1-18
+11-concurrent-stream-limit/frontend/index.html
+  s_b21fc2ba85cee9::t_c80fdd61b7edb2 1-12
+11-concurrent-stream-limit/frontend/vite.config.ts
+  s_b21fc2ba85cee9::t_b1e961e367c0f9 1-15
+11-concurrent-stream-limit/backend/src/service.rs
+  s_b21fc2ba85cee9::t_f78b2b3e022f3f 1-246
+11-concurrent-stream-limit/scripts/sql-console.sh
+  s_b21fc2ba85cee9::t_b7002937e39bcb 1-10
+11-concurrent-stream-limit/backend/src/http.rs
+  s_b21fc2ba85cee9::t_1d8a8f1b57a7e6 1-121
+11-concurrent-stream-limit/scripts/ui.sh
+  s_b21fc2ba85cee9::t_88588ac6eb3046 1-12
+11-concurrent-stream-limit/backend/src/error.rs
+  s_b21fc2ba85cee9::t_1721014f158c13 1-17
+11-concurrent-stream-limit/scripts/start-all.sh
+  s_b21fc2ba85cee9::t_5cf7cec1b0dc38 1-34
+11-concurrent-stream-limit/scripts/test-all.sh
+  s_b21fc2ba85cee9::t_a5dda9814e80a5 1-13
+11-concurrent-stream-limit/frontend/src/lib/time.ts
+  s_b21fc2ba85cee9::t_eddd1803b3fb4f 1-19
+11-concurrent-stream-limit/backend/src/lib.rs
+  s_b21fc2ba85cee9::t_e97c470a3bf0af 1-8
+11-concurrent-stream-limit/frontend/src/components/DeviceGrid.tsx
+  s_b21fc2ba85cee9::t_6027cff7da4ace 1-51
+11-concurrent-stream-limit/backend/src/clock.rs
+  s_b21fc2ba85cee9::t_8cba0e186c2b9f 1-39
+11-concurrent-stream-limit/frontend/src/styles.css
+  s_b21fc2ba85cee9::t_a6e6aaee29002e 1-361
+11-concurrent-stream-limit/backend/src/lua/list.lua
+  s_b21fc2ba85cee9::t_eb888c9b5a8a46 1-19
+11-concurrent-stream-limit/frontend/src/components/AccountTabs.tsx
+  s_b21fc2ba85cee9::t_a751a9a2960351 1-26
+11-concurrent-stream-limit/frontend/tsconfig.json
+  s_b21fc2ba85cee9::t_6f0790a33a4a22 15
+  s_b21fc2ba85cee9::t_c4f0d40ad53803 1-14,16-18
+11-concurrent-stream-limit/backend/Cargo.lock
+  s_b21fc2ba85cee9::t_bc98b0847f654a 1-939
+11-concurrent-stream-limit/frontend/bun.lock
+  s_b21fc2ba85cee9::t_71a95b4196b423 1-168
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "c12a612a5951229c6c5591a3987c88bc9ef0f3fb",
+  "prompts": {},
+  "sessions": {
+    "s_b21fc2ba85cee9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36239a68-0214-46fa-90ab-e0d06be57d68",
+        "model": "unknown"
+      },
+      "human_author": "diegopacheco <diego.pacheco.it@gmail.com>"
+    }
+  }
+}
