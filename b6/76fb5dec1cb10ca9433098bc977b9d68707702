@@ -1,0 +1,122 @@
+05-ssai-ad-insertion/scripts/test-all.sh
+  s_b21fc2ba85cee9::t_827a0a6d09a60c 1-13
+05-ssai-ad-insertion/frontend/vite.config.ts
+  s_b21fc2ba85cee9::t_46251c0fb8e6c5 1-7,9-17
+  s_b21fc2ba85cee9::t_7233976f1bf4ea 8
+05-ssai-ad-insertion/frontend/src/hooks/useBeacons.ts
+  s_b21fc2ba85cee9::t_22f0576cbf2c23 1-26
+05-ssai-ad-insertion/scripts/start-all.sh
+  s_b21fc2ba85cee9::t_12edc2b240d1a6 1-33
+05-ssai-ad-insertion/backend/tests/stitcher_test.rs
+  s_b21fc2ba85cee9::t_49630e8a00f913 1-156
+05-ssai-ad-insertion/frontend/index.html
+  s_b21fc2ba85cee9::t_34978c7f411355 1-12
+05-ssai-ad-insertion/scripts/status.sh
+  s_b21fc2ba85cee9::t_c846270976e86b 1-14
+05-ssai-ad-insertion/scripts/stop-all.sh
+  s_b21fc2ba85cee9::t_6f47d8206a0a1d 1-17
+05-ssai-ad-insertion/backend/Cargo.toml
+  s_b21fc2ba85cee9::t_f1f9930ecebfaa 1-24
+05-ssai-ad-insertion/docs/architecture.svg
+  s_b21fc2ba85cee9::t_d58b16c791e5b3 1-9,11-27,29-57,59-70,73-74,76-79,85
+  s_b21fc2ba85cee9::t_c01ed83acfe320 10,28,71-72,80-84
+  s_b21fc2ba85cee9::t_8589b161be0b4e 58,75
+05-ssai-ad-insertion/scripts/setup.sh
+  s_b21fc2ba85cee9::t_a8768c682ca153 1-20
+05-ssai-ad-insertion/.gitignore
+  s_b21fc2ba85cee9::t_ecff25eafe315a 1-5
+05-ssai-ad-insertion/frontend/src/types/index.ts
+  s_b21fc2ba85cee9::t_8c808957f43208 1-38
+05-ssai-ad-insertion/backend/src/ads.rs
+  s_b21fc2ba85cee9::t_e36ed0bc0b3f03 87
+  s_b21fc2ba85cee9::t_f756ff8719e9bc 1-86,88-99
+05-ssai-ad-insertion/backend/src/stitcher.rs
+  s_b21fc2ba85cee9::t_b6fb1e3e0d5d10 107
+  s_b21fc2ba85cee9::t_0a07e8abc1b47b 1-106,108-119
+05-ssai-ad-insertion/frontend/src/hooks/useStitch.ts
+  s_b21fc2ba85cee9::t_f218d3a1c225c7 1-25
+05-ssai-ad-insertion/backend/tests/http_test.rs
+  s_b21fc2ba85cee9::t_93f2d39554b38c 1-104
+05-ssai-ad-insertion/frontend/src/styles.css
+  s_b21fc2ba85cee9::t_390594dedd5bff 1-212,214-270
+  s_b21fc2ba85cee9::t_9d7e36c6844116 213
+05-ssai-ad-insertion/frontend/src/manifest.ts
+  s_b21fc2ba85cee9::t_a80ae3903b77d4 1-19
+05-ssai-ad-insertion/backend/tests/common/mod.rs
+  s_b21fc2ba85cee9::t_d649cce4d70bda 1-77
+05-ssai-ad-insertion/backend/src/lib.rs
+  s_b21fc2ba85cee9::t_f5410c51339e3c 1-32
+05-ssai-ad-insertion/frontend/src/components/Player.tsx
+  s_b21fc2ba85cee9::t_1c2b142c05e04e 1-37
+05-ssai-ad-insertion/frontend/src/main.tsx
+  s_b21fc2ba85cee9::t_1a7fec84ecd783 1-13
+05-ssai-ad-insertion/frontend/src/App.tsx
+  s_b21fc2ba85cee9::t_a24d3cc09c768d 1-59
+05-ssai-ad-insertion/backend/src/users.rs
+  s_b21fc2ba85cee9::t_467c54b8392d86 1-37
+05-ssai-ad-insertion/README.md
+  s_b21fc2ba85cee9::t_96f07de3eacbde 1-144
+05-ssai-ad-insertion/backend/src/main.rs
+  s_b21fc2ba85cee9::t_d5b4113b4c4d93 1-15
+05-ssai-ad-insertion/backend/src/error.rs
+  s_b21fc2ba85cee9::t_d79acf5fc9dec5 7-8
+  s_b21fc2ba85cee9::t_6456c2e044c8a3 1-6,9-21
+05-ssai-ad-insertion/frontend/src/components/BeaconLog.tsx
+  s_b21fc2ba85cee9::t_d9fcb0f2cb4c9d 1-44
+05-ssai-ad-insertion/scripts/media.sh
+  s_b21fc2ba85cee9::t_9e771ae363bcd6 1-60
+05-ssai-ad-insertion/frontend/src/api/client.ts
+  s_b21fc2ba85cee9::t_aa302d2a683c53 1-25
+05-ssai-ad-insertion/backend/src/catalog.rs
+  s_b21fc2ba85cee9::t_d92669f77937a4 1-43
+05-ssai-ad-insertion/frontend/src/components/BreakSummary.tsx
+  s_b21fc2ba85cee9::t_c80ace283a746f 1-30
+05-ssai-ad-insertion/frontend/src/components/ManifestPanel.tsx
+  s_b21fc2ba85cee9::t_ae5db06ae146bc 1-29
+05-ssai-ad-insertion/backend/tests/playlist_test.rs
+  s_b21fc2ba85cee9::t_23d80d7a7037d3 1-47
+05-ssai-ad-insertion/backend/src/http.rs
+  s_b21fc2ba85cee9::t_faee510ef4e4b9 1-153
+05-ssai-ad-insertion/frontend/tsconfig.json
+  s_b21fc2ba85cee9::t_b06c82e977fb77 15
+  s_b21fc2ba85cee9::t_8f31003e92569e 1-14,16-18
+05-ssai-ad-insertion/frontend/src/components/UserPicker.tsx
+  s_b21fc2ba85cee9::t_59f8d515d7c1d2 1-21
+05-ssai-ad-insertion/backend/tests/tracking_test.rs
+  s_b21fc2ba85cee9::t_6c266e20c05229 1-48
+05-ssai-ad-insertion/frontend/src/manifest.test.ts
+  s_b21fc2ba85cee9::t_df266aaf7c316b 1-28
+05-ssai-ad-insertion/backend/src/playlist.rs
+  s_b21fc2ba85cee9::t_c9449a83bf64c1 1-143
+05-ssai-ad-insertion/frontend/package.json
+  s_b21fc2ba85cee9::t_b06c82e977fb77 18
+  s_b21fc2ba85cee9::t_9acbad909b02db 1-17,19-25
+05-ssai-ad-insertion/scripts/ui.sh
+  s_b21fc2ba85cee9::t_0c10eb7042674d 1-12
+05-ssai-ad-insertion/backend/src/tracking.rs
+  s_b21fc2ba85cee9::t_a4c3d6d7db858f 1-92
+05-ssai-ad-insertion/backend/Cargo.lock
+  s_b21fc2ba85cee9::t_f2a4e87478454e 1-519
+05-ssai-ad-insertion/frontend/bun.lock
+  s_b21fc2ba85cee9::t_b2c2ecfa2bd55e 1-171
+05-ssai-ad-insertion/scripts/common.sh
+  s_b21fc2ba85cee9::t_d3739ba06b9be8 1-122
+05-ssai-ad-insertion/scripts/ports.env
+  s_b21fc2ba85cee9::t_ee9ddf90696970 1-2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "b676fb5dec1cb10ca9433098bc977b9d68707702",
+  "prompts": {},
+  "sessions": {
+    "s_b21fc2ba85cee9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36239a68-0214-46fa-90ab-e0d06be57d68",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "diegopacheco <diego.pacheco.it@gmail.com>"
+    }
+  }
+}
