@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 470" width="1000" height="470">
+  <defs>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&amp;display=swap');
+      text { font-family: 'Caveat', cursive; fill: #2b2b2b; }
+      .t { font-size: 22px; font-weight: 700; }
+      .s { font-size: 17px; }
+      .l { font-size: 16px; fill: #555; }
+    </style>
+    <filter id="wobble">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" seed="7" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="3"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="470" fill="#fffdf8"/>
+  <g filter="url(#wobble)" stroke="#444" stroke-width="2">
+    <rect x="30" y="40" width="200" height="75" rx="12" fill="#ffe3e3"/>
+    <rect x="30" y="145" width="200" height="75" rx="12" fill="#e3f0ff"/>
+    <rect x="390" y="90" width="220" height="80" rx="12" fill="#fff4cc"/>
+    <rect x="740" y="85" width="220" height="90" rx="12" fill="#e6f7e6"/>
+    <rect x="750" y="300" width="200" height="85" rx="12" fill="#f0e6ff"/>
+    <rect x="510" y="300" width="200" height="85" rx="12" fill="#ffe9d6"/>
+    <rect x="270" y="300" width="200" height="85" rx="12" fill="#dff7f4"/>
+    <rect x="30" y="300" width="200" height="85" rx="12" fill="#e3f0ff"/>
+  </g>
+  <g stroke="#444" stroke-width="2" fill="none" marker-end="url(#arrow)" filter="url(#wobble)">
+    <path d="M230,78 L388,118"/>
+    <path d="M230,182 L388,145"/>
+    <path d="M610,130 L738,130"/>
+    <path d="M850,175 L850,298"/>
+    <path d="M750,342 L712,342"/>
+    <path d="M510,342 L472,342"/>
+    <path d="M270,342 L232,342"/>
+  </g>
+  <text x="130" y="70" text-anchor="middle" class="t">Load generator</text>
+  <text x="130" y="94" text-anchor="middle" class="s">60 synthetic sessions</text>
+  <text x="130" y="110" text-anchor="middle" class="s">cdn-gamma is the bad CDN</text>
+  <text x="130" y="175" text-anchor="middle" class="t">Real player</text>
+  <text x="130" y="199" text-anchor="middle" class="s">hls.js + PlayerTracker</text>
+  <text x="130" y="215" text-anchor="middle" class="s">ffmpeg 3-rung ladder</text>
+  <text x="500" y="120" text-anchor="middle" class="t">Rust ingest (axum)</text>
+  <text x="500" y="144" text-anchor="middle" class="s">POST /api/beacons</text>
+  <text x="500" y="162" text-anchor="middle" class="s">validate, BeaconSink trait</text>
+  <text x="850" y="115" text-anchor="middle" class="t">Kafka 4.3 (KRaft)</text>
+  <text x="850" y="139" text-anchor="middle" class="s">topic qoe-beacons</text>
+  <text x="850" y="157" text-anchor="middle" class="s">3 partitions, key = session_id</text>
+  <text x="850" y="330" text-anchor="middle" class="t">Rust consumer</text>
+  <text x="850" y="354" text-anchor="middle" class="s">rdkafka StreamConsumer</text>
+  <text x="850" y="372" text-anchor="middle" class="s">group qoe-aggregator</text>
+  <text x="610" y="330" text-anchor="middle" class="t">Aggregator trait</text>
+  <text x="610" y="354" text-anchor="middle" class="s">TumblingWindows 10s</text>
+  <text x="610" y="372" text-anchor="middle" class="s">watermark = now - 2s</text>
+  <text x="370" y="330" text-anchor="middle" class="t">Hub</text>
+  <text x="370" y="354" text-anchor="middle" class="s">broadcast + history</text>
+  <text x="370" y="372" text-anchor="middle" class="s">GET /api/stream (SSE)</text>
+  <text x="130" y="330" text-anchor="middle" class="t">React dashboard</text>
+  <text x="130" y="354" text-anchor="middle" class="s">per CDN / per title</text>
+  <text x="130" y="372" text-anchor="middle" class="s">health colors + trends</text>
+  <text x="675" y="122" text-anchor="middle" class="l">produce</text>
+  <text x="870" y="245" class="l">consume</text>
+  <text x="300" y="80" text-anchor="middle" class="l">JSON beacons</text>
+  <text x="500" y="440" text-anchor="middle" class="s">every beacon feeds two windows: one per CDN and one per title</text>
+</svg>
