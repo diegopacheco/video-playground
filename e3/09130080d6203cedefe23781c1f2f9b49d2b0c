@@ -1,0 +1,22 @@
+resume-watching/backend/src/main.rs
+  s_969cf7fdd75017::t_fe48d9a571c407 28
+resume-watching/scripts/common.sh
+  s_969cf7fdd75017::t_89b7651df9c850 67
+  s_969cf7fdd75017::t_135568e303b839 75-78
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "e309130080d6203cedefe23781c1f2f9b49d2b0c",
+  "prompts": {},
+  "sessions": {
+    "s_969cf7fdd75017": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "59827db4-cefa-46ac-a8b7-e88548c12049",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "diegopacheco <diego.pacheco.it@gmail.com>"
+    }
+  }
+}
