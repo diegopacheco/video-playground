@@ -1,0 +1,83 @@
+recommendations/scripts/common.sh
+  s_b21fc2ba85cee9::t_fccc17699f0788 1-145
+concurrent-stream-limit/README.md
+  s_b21fc2ba85cee9::t_1226665b62a021 1-155
+simulcast-scheduler/scripts/common.sh
+  s_b21fc2ba85cee9::t_fccc17699f0788 1-119
+abr-algorithms/scripts/common.sh
+  s_b21fc2ba85cee9::t_fccc17699f0788 1-122
+catalog-search/scripts/common.sh
+  s_b21fc2ba85cee9::t_fccc17699f0788 1-119
+subtitle-service/scripts/common.sh
+  s_b21fc2ba85cee9::t_fccc17699f0788 1-126
+release-day-herd/scripts/common.sh
+  s_b21fc2ba85cee9::t_fccc17699f0788 1-114
+origin-cdn-edge/scripts/common.sh
+  s_b21fc2ba85cee9::t_fccc17699f0788 1-122
+README.md
+  s_b21fc2ba85cee9::t_1226665b62a021 10-11,17-19,25-26,32-34,40-41,47-48,54-55
+resume-watching/README.md
+  s_b21fc2ba85cee9::t_1226665b62a021 1-172
+per-title-encoding/README.md
+  s_b21fc2ba85cee9::t_1226665b62a021 1-139
+qoe-telemetry/README.md
+  s_b21fc2ba85cee9::t_1226665b62a021 1-167
+ssai-ad-insertion/README.md
+  s_b21fc2ba85cee9::t_1226665b62a021 1-144
+watch-party/scripts/common.sh
+  s_b21fc2ba85cee9::t_fccc17699f0788 1-122
+simulcast-scheduler/README.md
+  s_b21fc2ba85cee9::t_1226665b62a021 1-204
+resume-watching/scripts/common.sh
+  s_b21fc2ba85cee9::t_fccc17699f0788 1-121
+recommendations/README.md
+  s_b21fc2ba85cee9::t_1226665b62a021 1-159
+ll-hls-simulcast/README.md
+  s_b21fc2ba85cee9::t_1226665b62a021 1-149
+drm-license-server/README.md
+  s_b21fc2ba85cee9::t_1226665b62a021 1-157
+hls-dash-packager/scripts/common.sh
+  s_b21fc2ba85cee9::t_fccc17699f0788 1-122
+ssai-ad-insertion/scripts/common.sh
+  s_b21fc2ba85cee9::t_fccc17699f0788 1-122
+per-title-encoding/scripts/common.sh
+  s_b21fc2ba85cee9::t_fccc17699f0788 1-122
+origin-cdn-edge/README.md
+  s_b21fc2ba85cee9::t_1226665b62a021 1-179
+abr-algorithms/README.md
+  s_b21fc2ba85cee9::t_1226665b62a021 1-146
+concurrent-stream-limit/scripts/common.sh
+  s_b21fc2ba85cee9::t_fccc17699f0788 1-122
+hls-dash-packager/README.md
+  s_b21fc2ba85cee9::t_1226665b62a021 1-145
+ll-hls-simulcast/scripts/common.sh
+  s_b21fc2ba85cee9::t_fccc17699f0788 1-119
+catalog-search/README.md
+  s_b21fc2ba85cee9::t_1226665b62a021 1-159
+subtitle-service/README.md
+  s_b21fc2ba85cee9::t_1226665b62a021 1-220
+watch-party/README.md
+  s_b21fc2ba85cee9::t_1226665b62a021 1-155
+release-day-herd/README.md
+  s_b21fc2ba85cee9::t_1226665b62a021 1-171
+drm-license-server/scripts/common.sh
+  s_b21fc2ba85cee9::t_fccc17699f0788 1-122
+qoe-telemetry/scripts/common.sh
+  s_b21fc2ba85cee9::t_fccc17699f0788 1-120
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "7eee6695bfe2e02058ea319a133321212dba7532",
+  "prompts": {},
+  "sessions": {
+    "s_b21fc2ba85cee9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36239a68-0214-46fa-90ab-e0d06be57d68",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "diegopacheco <diego.pacheco.it@gmail.com>"
+    }
+  }
+}
