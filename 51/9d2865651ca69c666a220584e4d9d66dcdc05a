@@ -1,0 +1,19 @@
+resume-watching/scripts/start-all.sh
+  s_1ebed7ee3536fd::t_4d03a46bab883c 13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "519d2865651ca69c666a220584e4d9d66dcdc05a",
+  "prompts": {},
+  "sessions": {
+    "s_1ebed7ee3536fd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1c7072a8-302f-4cea-af6c-1327d3b37dba",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "diegopacheco <diego.pacheco.it@gmail.com>"
+    }
+  }
+}
