@@ -25,7 +25,7 @@ async fn main() -> anyhow::Result<()> {
     });
 
     let state = AppState { store: store.clone(), coalescer, flush_secs: config.flush_secs };
-    let listener = tokio::net::TcpListener::bind(("0.0.0.0", config.port)).await?;
+    let listener = tokio::net::TcpListener::bind(("127.0.0.1", config.port)).await?;
     println!("resume-watching on port {} using {} flush every {}s", config.port, store.name(), config.flush_secs);
     axum::serve(listener, router(state)).await?;
     Ok(())

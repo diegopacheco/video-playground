@@ -64,13 +64,17 @@ wait_port_down() {
 }
 
 start_bg() {
-  local name dir
+  local name dir port
   name="$1"
   dir="$2"
   shift 2
   if [ -f "$RUN/$name.pid" ] && kill -0 "$(cat "$RUN/$name.pid")" 2>/dev/null; then
     log "$name already running"
     return 0
+  fi
+  port="$(service_port "$name")"
+  if [ -n "$port" ] && port_up "$port"; then
+    fail "$name port $port is already used by $(ps -o command= -p "$(port_pid "$port")")"
   fi
   ( cd "$dir" && exec "$@" >"$LOGS/$name.log" 2>&1 ) &
   echo $! >"$RUN/$name.pid"
