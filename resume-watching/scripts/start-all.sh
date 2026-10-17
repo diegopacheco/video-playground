@@ -10,7 +10,7 @@ wait_scylla() {
   local tries
   tries=60
   while [ "$tries" -gt 0 ]; do
-    if podman logs vp10-scylla 2>&1 | grep -q "Starting listening for CQL clients on"; then return 0; fi
+    if podman logs vp10-scylla 2>&1 | grep "Starting listening for CQL clients on" >/dev/null; then return 0; fi
     sleep 1
     tries=$((tries - 1))
   done
